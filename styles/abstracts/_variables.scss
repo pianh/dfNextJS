@@ -42,6 +42,9 @@
     --box-shadow-10: 0px 4px 15px rgba(17, 18, 55, 0.4);
     // #endregion
 
+    //Header
+    --color-header-black: #4a494a;
+    --color-header-border: #e5dacf;
     //NextGen
     --tp-ff-body: 'Roboto', sans-serif;
     --tp-ff-heading: 'Roboto', sans-serif;
@@ -126,6 +129,7 @@
     --tp-fz-h5: 16px;
     --tp-fz-h6: 14px;
 }
+// $--header-height: 90px;
 @mixin breakpoint($point) {
     @if $point == md {
         //768px
@@ -137,4 +141,14 @@
 
 /* Dark Mode */
 [data-theme='dark'] {
+}
+
+//header height
+@mixin breakpoint($point) {
+    @if $point == md {
+        //768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
 }
