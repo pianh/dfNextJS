@@ -1,4 +1,7 @@
 .header__main {
+    .header__main__content {
+        position: relative;
+    }
     height: 90px;
     // background: var(--tp-common-purple);
     border-bottom: 1px solid var(--color-header-border);
@@ -82,7 +85,7 @@
     }
     .submenu::before {
         content: '';
-        border: 30px solid;
+        border: 35px solid;
         border-color: transparent;
         position: absolute;
         top: -40px;
@@ -94,15 +97,57 @@
         animation: fadeIn 0.2s ease-in-out;
     }
 
-    .sub-portfolio {
+    .submenu {
         li {
-            padding-right: 10;
+            padding-right: 40px;
             div {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 a {
-                    margin-right: 30px;
+                    margin-right: 50px;
+                    padding-top: 3px;
+                }
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        li:hover .sub-detail {
+            display: block;
+            animation: fadeIn 0.2s ease-in-out;
+        }
+        .sub-detail {
+            display: none;
+            position: absolute;
+            top: -21px;
+            left: 210px;
+            background: var(--color-white);
+            border: 1px solid var(--color-header-border);
+
+            li:first-child {
+                margin-top: 20px;
+            }
+            li:last-child {
+                margin-bottom: 30px;
+            }
+            li {
+                padding-top: 15px;
+                padding-right: 50px;
+                font-size: 15px;
+                font-weight: 500;
+                color: var(--color-black);
+                transition: border-color 3s, left 0.3s;
+                position: relative;
+                left: 0%;
+                display: inline-block;
+                a {
+                    display: inline-block;
+                    &:hover {
+                        border-bottom: 1px solid var(--color-black);
+                        left: 100%;
+                    }
                 }
             }
         }

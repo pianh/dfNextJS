@@ -22,43 +22,43 @@ export default function Header() {
                                     </Link>
                                     <ul className="submenu">
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Main Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Announcement Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Bridal Shop
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Bridal Shop
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Parallax Gallery
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Florist Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="" href="/">
                                                 Wedding Cakes
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li className="has-dropdown">
                                     <Link className="" href="/">
                                         Pages
                                     </Link>
@@ -104,22 +104,56 @@ export default function Header() {
                                     <Link className="" href="/">
                                         Portfolio
                                     </Link>
-                                    <ul className="submenu sub-portfolio">
-                                        <li>
+                                    <ul className="submenu">
+                                        <li className="has-dropdown">
                                             <div className="d-flex justify-content-between">
                                                 <Link className="has-dropdown" href="/">
                                                     List Types
                                                 </Link>
                                                 <i className="fa-solid fa-angle-right"></i>
                                             </div>
+                                            <ul className="sub-detail">
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Standard List
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Gallery List
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Floating List
+                                                    </Link>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li>
+                                        <li className="has-dropdown">
                                             <div className="d-flex justify-content-between">
                                                 <Link className="has-dropdown" href="/">
                                                     List Layout
                                                 </Link>
                                                 <i className="fa-solid fa-angle-right"></i>
                                             </div>
+                                            <ul className="sub-detail">
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Standard List
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Gallery List
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link className="has-dropdown" href="/">
+                                                        Floating List
+                                                    </Link>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <div className="d-flex justify-content-between">
