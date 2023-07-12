@@ -45,6 +45,7 @@
     //Header
     --color-header-black: #4a494a;
     --color-header-border: #e5dacf;
+    --color-main-border: #e5dacf;
     //NextGen
     --tp-ff-body: 'Roboto', sans-serif;
     --tp-ff-heading: 'Roboto', sans-serif;
@@ -67,8 +68,8 @@
     --tp-common-cream: #fff1e0;
     --tp-common-pink: #ff6470;
     --tp-common-pink-2: #fc4c56;
-    --tp-common-orange: #f37f43;
-    --tp-common-orange-2: #ee6002;
+    --tp-common-orange: #e67339;
+    --tp-common-orange-2: #f7e3d0;
     --tp-common-orange-3: #ff9f4b;
     --tp-common-purple: #e33cff;
     --tp-common-purple-2: #e64dff;
@@ -80,7 +81,10 @@
     --tp-common-violet: #6151fb;
     --tp-common-violet-2: #a794c8;
     --tp-header-primary: #031220;
+    --tp-header: #efa239;
     --tp-header-2: #120101;
+    --tp-header-3: #262626;
+
     --tp-grey-1: #f1f1f1;
     --tp-grey-2: #f5f6f8;
     --tp-grey-3: #f8f8f8;
@@ -152,3 +156,7 @@
         }
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500&display=swap');
+
+$Poppins: 'Poppins', sans-serif;

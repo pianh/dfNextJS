@@ -1,10 +1,23 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+import ControlledCarousel from '@/components/slider/slider';
+import SocialIcon from '@/components/common/SocialIcon';
+import { Img } from '@/components/common/Img';
+import Button from '@/components/common/Button';
+
+import People from '@/components/common/People';
+import Link from 'next/link';
+import Map from '@/components/common/Map';
+import Heading from '@/components/common/Heading';
+import SubHeading from '@/components/common/SubHeading';
+import ImagePoint from '@/components/common/ImagePoint';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+export default function Home({ resultsOne, resultsTwo }) {
+    // console.log(resultsOne);
+    // console.log(resultsTwo);
     return (
         <>
             <Head>
@@ -13,9 +26,335 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main style={{ marginTop: '600px' }}>
-                <h1>Đây là aa Home page</h1>
+            <main>
+                <div className="home__wrapper">
+                    <section className=" slider__area pl-60 pr-60">
+                        <div className="container-fluid">
+                            <ControlledCarousel />
+                        </div>
+                    </section>
+                    <section className="story__area pt-80">
+                        <div className="container d-flex flex-column align-items-center">
+                            <Image
+                                src="/assets/images/bird.png"
+                                alt="story wedding"
+                                width={300}
+                                height={160}
+                                objectFit="cover"
+                            />
+
+                            <div className="story__area__heading">
+                                <Heading
+                                    title="Our love story"
+                                    subTitle="where it all begins"
+                                    desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam error, enim ea minima dolore iste
+                corrupti. Tenetur commodi facilis, expedita magnam officiis asperiores unde recusandae accusamus enim
+                modi, adipisci ea."
+                                />
+                            </div>
+                            <div className="row pt-75">
+                                <div className="col-lg-3 col-xl-3 col-xxl-3 col-12 col-sm-12 d-flex flex-column justify-content-center">
+                                    <SubHeading
+                                        title="Simona wilde"
+                                        desc="Varius vel pharetra vel turpis nunc eget lorem dolor sed lorem esi deusit."
+                                        className="story__heading-man"
+                                    />
+
+                                    <SocialIcon />
+                                </div>
+                                <div className="col-lg-6 col-xl-6 col-xxl-6 col-12 col-sm-12">
+                                    <Image
+                                        src="/assets/images/h5-img.png"
+                                        alt="story wedding"
+                                        objectFit="cover"
+                                        width={600}
+                                        height={600}
+                                    />
+                                </div>
+                                <div className="col-lg-3 col-xl-3 col-xxl-3 col-12 col-sm-12 d-flex flex-column justify-content-center">
+                                    <SubHeading
+                                        title="JOEL COOPER"
+                                        desc="Varius vel pharetra vel turpis nunc eget lorem dolor sed lorem esi deusit."
+                                        className="story__heading-girl"
+                                    />
+                                    <SocialIcon />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-12 col-sm-6 d-flex">
+                                    <div className="story-week box">
+                                        <h4>24</h4>
+                                        <span>Weeks</span>
+                                    </div>
+                                    <div className="story-day box">
+                                        <h4>04</h4>
+                                        <span>Days</span>
+                                    </div>
+                                    <div className="story-hour box">
+                                        <h4>21</h4>
+                                        <span>Weeks</span>
+                                    </div>
+                                    <div className="story-minute box">
+                                        <h4>59</h4>
+                                        <span>Minutes</span>
+                                    </div>
+                                    <div className="story-second box">
+                                        <h4>24</h4>
+                                        <span>Second</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="container-fluid pt-80">
+                            <ImagePoint
+                                title="SAVE THE DATE"
+                                subTitle="WE WOULD LIKE TO INVITE YOU TO CELEBRATE WITH US"
+                            />
+                        </div>
+                    </section>
+                    <section className="gallery__area">
+                        <div className="container">
+                            <Img src="/assets/images/bird-img.jpg" />
+
+                            <div className="gallery__area__heading">
+                                <h3 className="section__title">OUR LOVE GALLERY</h3>
+                                <h4 className="section__sub__title">MAGIC CAPTURED</h4>
+                                <p className="section__des__title">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation
+                                </p>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-6 col-sm-12 col-12">
+                                    <img src="/assets/images/h5-img-2.jpg" alt="" />
+                                </div>
+                                <div className="mt-2 col-lg-3 col-sm-6 col-12">
+                                    <img src="/assets/images/h5-img-3.jpg" alt="" />
+                                    <img src="/assets/images/h5-img-4.jpg" alt="" className="mt-3" />
+                                </div>
+                                <div className="col-lg-3 col-sm-6 col-12">
+                                    <img src="/assets/images/h5-img-05.jpg" alt="" className="mt-3" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="scroll__area">
+                        <div className="container-fluid d-flex">
+                            <div className="home-scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                ENDLESS INSPIRATIONS
+                            </div>
+                            <div className="home-scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                AGNIFICENT WEDDING
+                            </div>
+                            <div className="home-scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                BEAUTIFUL IDEAS
+                            </div>
+                            <div className="home-scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                ENDLESS INSPIRATIONS{' '}
+                            </div>
+                            <div className="home-scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                AGNIFICENT WEDDING
+                            </div>
+                        </div>
+                    </section>
+                    <section className="timeline__area">
+                        <div className="container">
+                            <div className="timeline__area__heading">
+                                <h3 className="section__title">LOVE STORY TIMELINE</h3>
+                                <h4 className="section__sub__title">TAKE A LOOK AT OUR STORY</h4>
+                            </div>
+                            <div className="timeline__process">
+                                <div className="row">
+                                    <div className="col-12 col-sm-6 col-lg-3">
+                                        <img src="/assets/images/h5-decor-01.png" alt="" />
+                                        <div className="process-wrapper">
+                                            <h3 className="process__tittle">FIRST MEETING</h3>
+                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6 col-lg-3">
+                                        <img src="/assets/images/h5-decor-02.png" alt="" />
+                                        <div className="process-wrapper">
+                                            <h3 className="process__tittle">FIRST MEETING</h3>
+                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6 col-lg-3">
+                                        <img src="/assets/images/h5-decor-03.png" alt="" />
+                                        <div className="process-wrapper">
+                                            <h3 className="process__tittle">FIRST MEETING</h3>
+                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-6 col-lg-3">
+                                        <img src="/assets/images/h5-decor-04.png" alt="" />
+                                        <div className="process-wrapper">
+                                            <h3 className="process__tittle">FIRST MEETING</h3>
+                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="container-fluid">
+                            <div>
+                                <img src="assets/images/h5-parallax-02.jpg" alt="story wedding" />
+                                <h3 className="section__title-3">SIMONA & NOEL</h3>
+                                <p className="section__sub-title-3">
+                                    LET US KNOW IF YOU ARE COMING TO CELEBRATE OUR LOVE
+                                </p>
+                                <Button className="section__button" title="RSVP" />
+                            </div>
+                        </div>
+                    </section>
+                    <section className="brides__area">
+                        <div className="container">
+                            <div className="brides__area__heading">
+                                <h3 className="section__title">BRIDESMAIDES & GROOMSMEN</h3>
+                                <h4 className="section__sub__title">MAGIC CAPTURE</h4>
+                                <p className="section__des__title">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <div>
+                                <People className="couple" />
+                            </div>
+                        </div>
+                        <div className="container-fluid">
+                            <div>
+                                <img src="/assets/images/h5-parallax-03.jpg" alt="" />
+                                <h3 className="section__title-3">WE CAN&aposT WAIT TO SEE YOU</h3>
+                                <p className="section__sub-title-3">SUNADAY 17, JANUART 2023 AT 17:00</p>
+                                <Button className="section__button" title="RSVP" />
+                            </div>
+                        </div>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/hover-client-new.png" alt="" />
+                                </div>
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/h3-client-2.png" alt="" />
+                                </div>
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/h3-client-hover-3.png" alt="" />
+                                </div>
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/h3-client-hover-04.png" alt="" />
+                                </div>
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/h3-client-hover-05.png" alt="" />
+                                </div>
+                                <div className="col-12 col-sm-3 col-lg-2 box">
+                                    <img src="/assets/images/h3-client-hover-6.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="partners__area">
+                        <div className="container">
+                            <div className="partners__area__heading">
+                                <h3 className="section__title">OUR PARTNERS</h3>
+                                <h4 className="section__sub__title">WEDDING ORGANIZATION</h4>
+                            </div>
+                            <div className="row">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div>
+                                        <div className="partner__img">
+                                            <Link href="">
+                                                <img src="/assets/images/partners/shop-15-img-1.jpg" alt="" />
+                                            </Link>
+                                        </div>
+                                        <div className="partner__effect"></div>
+                                    </div>
+                                    <div className="partner__card-group">
+                                        <h3>INVITATIONS</h3>
+                                        <h4>$420.00</h4>
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div>
+                                        <div className="partner__img">
+                                            <Link href="">
+                                                <img src="/assets/images/partners/shop-18-img-1.jpg" alt="" />
+                                            </Link>
+                                        </div>
+                                        <div className="partner__effect"></div>
+                                    </div>
+                                    <div className="partner__card-group">
+                                        <h3>INVITATIONS</h3>
+                                        <h4>$420.00</h4>
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div>
+                                        <div className="partner__img">
+                                            <Link href="">
+                                                <img src="/assets/images/partners/shop-24-img-01.jpg" alt="" />
+                                            </Link>
+                                        </div>
+                                        <div className="partner__effect"></div>
+                                    </div>
+                                    <div className="partner__card-group">
+                                        <h3>INVITATIONS</h3>
+                                        <h4>$420.00</h4>
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div>
+                                        <div className="partner__img">
+                                            <Link href="">
+                                                <img src="/assets/images/partners/shop-25-img-01.jpg" alt="" />
+                                            </Link>
+                                        </div>
+                                        <div className="partner__effect"></div>
+                                    </div>
+                                    <div className="partner__card-group">
+                                        <h3>INVITATIONS</h3>
+                                        <h4>$420.00</h4>
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="map__area">
+                            <Map />
+                        </div>
+                    </section>
+                </div>
             </main>
         </>
     );
+}
+
+export async function getServerSideProps() {
+    const resultsOne = await fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json').then((res) =>
+        res.json(),
+    );
+
+    //Who to follow section
+    const resultsTwo = await fetch('https://randomuser.me/api/?results=30&inc=name,login,picture').then((res) =>
+        res.json(),
+    );
+
+    return {
+        props: {
+            resultsOne,
+            resultsTwo,
+        },
+    };
 }
