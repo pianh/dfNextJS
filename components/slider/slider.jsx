@@ -55,7 +55,7 @@ function ControlledCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Button className="button-rsvp slider__button" title="RSVP" />
+            <Button className="section__button slider__button" title="RSVP" />
         </>
     );
 }

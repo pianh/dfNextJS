@@ -109,6 +109,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <ImagePoint
                                 title="SAVE THE DATE"
                                 subTitle="WE WOULD LIKE TO INVITE YOU TO CELEBRATE WITH US"
+                                src="assets/images/h5-parallax-01.jpg"
                             />
                         </div>
                     </section>
@@ -207,14 +208,14 @@ export default function Home({ resultsOne, resultsTwo }) {
                             </div>
                         </div>
                         <div className="container-fluid">
-                            <div>
+                            {/* <div>
                                 <img src="assets/images/h5-parallax-02.jpg" alt="story wedding" />
                                 <h3 className="section__title-3">SIMONA & NOEL</h3>
                                 <p className="section__sub-title-3">
                                     LET US KNOW IF YOU ARE COMING TO CELEBRATE OUR LOVE
                                 </p>
                                 <Button className="section__button" title="RSVP" />
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                     <section className="brides__area">
@@ -232,12 +233,12 @@ export default function Home({ resultsOne, resultsTwo }) {
                             </div>
                         </div>
                         <div className="container-fluid">
-                            <div>
+                            {/* <div>
                                 <img src="/assets/images/h5-parallax-03.jpg" alt="" />
                                 <h3 className="section__title-3">WE CAN&aposT WAIT TO SEE YOU</h3>
                                 <p className="section__sub-title-3">SUNADAY 17, JANUART 2023 AT 17:00</p>
                                 <Button className="section__button" title="RSVP" />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="container">
                             <div className="row">
