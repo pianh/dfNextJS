@@ -1,9 +1,13 @@
+.footer-top p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
 .footer-address,
 .footer-pre-phone,
 .footer-phone,
 .footer-mail {
     position: relative;
-    display: block;
 }
 
 .footer-address::after,
@@ -12,17 +16,102 @@
 .footer-mail::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 0;
+    left: 25%;
+    bottom: -1px;
+    width: 50%;
     height: 1px;
-    background-color: black;
-    transition: width 0.3s ease-in-out;
+    background-color: #ccc;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
 }
 
 .footer-address:hover::after,
 .footer-pre-phone:hover::after,
 .footer-phone:hover::after,
 .footer-mail:hover::after {
-    width: 100%;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer-input {
+    position: relative;
+    input {
+        padding: 10px 40px;
+        border-color: var(--color-main-border);
+        border-width: 1px;
+        font-family: 'Arimo';
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        line-height: 24px;
+        &:focus-visible {
+            border: 1px solid #ed9f77;
+        }
+    }
+
+    i {
+        position: absolute;
+        right: 120px;
+        top: 12px;
+        color: #ed9f77;
+    }
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid var(--color-main-border);
+}
+
+@media only screen and (min-width: 1025px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .footer-top p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .footer-top-right p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .footer-input {
+        position: relative;
+        input {
+            padding: 10px 2px;
+        }
+
+        i {
+            position: absolute;
+            right: 30px;
+            top: 12px;
+            color: #ed9f77;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .footer-top p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .footer-top-center {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .footer-input {
+        i {
+            position: absolute;
+            right: 80px;
+            top: 12px;
+            color: #ed9f77;
+        }
+    }
+
+    .footer-bottom {
+        span {
+            font-size: 14px;
+        }
+    }
 }

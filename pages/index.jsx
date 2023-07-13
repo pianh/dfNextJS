@@ -42,8 +42,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     title="Our love story"
                                     subTitle="where it all begins"
                                     desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam error, enim ea minima dolore iste
-                corrupti. Tenetur commodi facilis, expedita magnam officiis asperiores unde recusandae accusamus enim
-                modi, adipisci ea."
+                corrupti. Tenetur commodi facilis, expedita magnam officiis"
                                 />
                             </div>
                             <div className="row pt-75">
@@ -57,13 +56,15 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     <SocialIcon />
                                 </div>
                                 <div className="col-lg-6 col-xl-6 col-xxl-6 col-12 col-sm-12">
-                                    <Image
-                                        src="/assets/images/h5-img.png"
-                                        alt="story wedding"
-                                        objectFit="cover"
-                                        width={600}
-                                        height={600}
-                                    />
+                                    <div className="story__image d-flex justify-content-center">
+                                        <Image
+                                            src="/assets/images/h5-img.png"
+                                            alt="story wedding"
+                                            objectFit="cover"
+                                            width={600}
+                                            height={600}
+                                        />
+                                    </div>
                                 </div>
                                 <div className="col-lg-3 col-xl-3 col-xxl-3 col-12 col-sm-12 d-flex flex-column justify-content-center">
                                     <SubHeading
@@ -77,35 +78,35 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <div className="story__time-wrapper">
                                 <div className="row">
                                     <div className="col-lg-1"></div>
-                                    <div className="col-12 col-sm-6 col-lg-2">
+                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
                                         <div className="box story-week box">
                                             <h4>24</h4>
                                             <span>Weeks</span>
                                         </div>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2">
+                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
                                         <div className="story-day box">
                                             <h4>04</h4>
                                             <span>Days</span>
                                         </div>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2">
+                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
                                         <div className="story-hour box">
                                             <h4>21</h4>
                                             <span>Weeks</span>
                                         </div>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2">
+                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
                                         <div className="story-minute box">
                                             <h4>59</h4>
                                             <span>Minutes</span>
                                         </div>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2">
+                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
                                         <div className="story-second box">
                                             <h4>24</h4>
                                             <span>Second</span>
@@ -120,6 +121,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                 title="SAVE THE DATE"
                                 subTitle="WE WOULD LIKE TO INVITE YOU TO CELEBRATE WITH US"
                                 src="/assets/images/h5-parallax-01.jpg"
+                                width="1800"
+                                height="750"
                             />
                         </div>
                     </section>
@@ -142,7 +145,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h5-img-2.jpg"
                                             alt="gallery__image"
-                                            width={650}
+                                            width={700}
                                             height={700}
                                             objectFit="cover"
                                         />
@@ -154,7 +157,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                                             src="/assets/images/h5-img-3.jpg"
                                             alt="gallery__image"
                                             width={330}
-                                            height={350}
+                                            height={345}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -163,9 +166,9 @@ export default function Home({ resultsOne, resultsTwo }) {
                                             src="/assets/images/h5-img-4.jpg"
                                             alt="gallery__image gallery__image"
                                             width={330}
-                                            height={350}
+                                            height={345}
                                             objectFit="cover"
-                                            className="mt-1"
+                                            className="mt-2"
                                         />
                                     </div>
                                 </div>
@@ -301,8 +304,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <ImagePoint
                                 title="SIMONA & NOEL"
                                 subTitle="LET US KNOW IF YOU ARE COMING TO CELEBRATE OUR LOVE"
-                                src="assets/images/h5-parallax-02.jpg"
+                                src="/assets/images/h5-parallax-02.jpg"
                                 alt="SIMONA wedding"
+                                width="1800"
+                                height="750"
                             />
                         </div>
                     </section>
@@ -326,9 +331,11 @@ export default function Home({ resultsOne, resultsTwo }) {
                                                 height={300}
                                             />
                                             <div className="brides__grooms-effect">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team-decor-img.png"
                                                     alt="brides grooms image"
+                                                    width={400}
+                                                    height={400}
                                                 />
                                             </div>
                                         </div>
@@ -438,8 +445,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <ImagePoint
                                 title="WE CAN'T WAIT TO SEE"
                                 subTitle="SUNADAY 17, JANUART 2023 AT 17:00"
-                                src="assets/images/h5-parallax-03.jpg"
+                                src="/assets/images/h5-parallax-03.jpg"
                                 alt="SIMONA wedding"
+                                width="1800"
+                                height="750"
                             />
                         </div>
                         <div className="container pt-80">

@@ -19,6 +19,59 @@
 }
 .slider__button {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 47%;
+}
+
+//Laptop and Des
+@media (min-width: 1024px) {
+    .slider__button {
+        position: absolute;
+        top: 50%;
+        left: 47%;
+    }
+}
+//Tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+    .slider__button {
+        position: absolute;
+        top: 38%;
+        left: 42%;
+    }
+    .carousel-caption {
+        h3 {
+            font-size: 70px;
+            margin-bottom: 50px;
+        }
+        p {
+            margin-bottom: 140px;
+        }
+    }
+}
+//Mobile
+@media (max-width: 740px) {
+    .slider__area {
+        padding: 0;
+    }
+    .carousel-item img {
+        height: auto;
+        width: 500px;
+        object-fit: cover;
+        filter: brightness(0.8);
+    }
+    .slider__button {
+        position: absolute;
+        top: 27%;
+        left: 36%;
+    }
+    .carousel-caption {
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 60px;
+            font-size: 14px;
+        }
+    }
 }

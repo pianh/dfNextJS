@@ -6,6 +6,11 @@
     }
 }
 
+.story__image {
+    width: 700px;
+    height: 640px;
+}
+
 .story-week,
 .story-day,
 .story-hour,
@@ -149,5 +154,94 @@
     }
     &:hover img {
         opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .story-week,
+    .story-day,
+    .story-hour,
+    .story-minute,
+    .story-second {
+        width: 250px;
+        height: 250px;
+        margin: 10px 10px;
+    }
+    .section__image {
+        padding-top: 30px;
+    }
+    .gallery__image {
+        margin-bottom: 10px;
+    }
+    .timeline__process-wire {
+        display: none;
+    }
+    .timeline__image {
+        margin-bottom: 10px;
+    }
+
+    .brides__grooms-image {
+        max-width: 300px;
+        max-height: auto;
+        img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .story__image {
+        width: 400px;
+        height: 400px;
+        img {
+            width: 340px;
+            height: auto;
+        }
+    }
+    .story__time-wrapper {
+        padding-top: 40px;
+    }
+    .story-week,
+    .story-day,
+    .story-hour,
+    .story-minute,
+    .story-second {
+        width: 350px;
+        height: 350px;
+        margin: 10px 10px;
+    }
+    .timeline__process-wire {
+        display: none;
+    }
+
+    .gallery__image {
+        position: relative;
+        overflow: hidden;
+        max-width: 400px;
+        max-height: 500px;
+        margin-bottom: 10px;
+        img {
+            width: 400px;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    .timeline__image {
+        margin-bottom: 10px;
+    }
+    .box {
+        width: 350px;
+        height: 350px;
+        margin: 10px 10px;
+    }
+    .product__card {
+        margin-bottom: 30px;
     }
 }

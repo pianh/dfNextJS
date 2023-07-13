@@ -55,11 +55,12 @@ export default function Product() {
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3">
                     <div className="product__wrapper">
-                        <Link href="">
-                            <img src="/assets/images/partners/shop-25-img-01.jpg" alt="" />
-                        </Link>
-                        <div className="product__img-effect"></div>
-
+                        <div className="product__img">
+                            <Link href="">
+                                <img src="/assets/images/partners/shop-25-img-01.jpg" alt="" />
+                            </Link>
+                            <div className="product__img-effect"></div>
+                        </div>
                         <div className="product__card mt-3 text-center">
                             <h3 className="section__title-4 m-0">CARAMEL CAKE</h3>
                             <h4 className="section__des-4">$420.00</h4>
