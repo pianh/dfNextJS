@@ -228,7 +228,7 @@ export default function Header() {
                                 </li>
                             </ul>
                         </nav>
-                        <div className={`header__main__sidebar d-flex align-items-center ${menuOpen ? 'isMenu' : ''}`}>
+                        <div className="header__main__sidebar d-flex align-items-center">
                             <div
                                 className={`header__main__toggle ${isHovered ? '' : 'move'}`}
                                 onMouseEnter={handleMouseEnter}

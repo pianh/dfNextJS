@@ -14,26 +14,32 @@ function ControlledCarousel() {
         <>
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/images/wedding1.jpg"
-                        alt="First slide"
-                        // width={1000}
-                        // height={700}
-                    />
+                    <div className="slider__img">
+                        <Image
+                            className="d-block w-100"
+                            src="/assets/images/wd3.jpeg"
+                            alt="First slide"
+                            width={1000}
+                            height={700}
+                            objectFit="cover"
+                        />
+                    </div>
                     <Carousel.Caption>
                         <h3>SIMONA & NOEL</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/images/wedding2.jpg"
-                        alt="Second slide"
-                        // width={1000}
-                        // height={700}
-                    />
+                    <div className="slider__img">
+                        <Image
+                            className="d-block w-100"
+                            src="/assets/images/wd1.jpg"
+                            alt="Second slide"
+                            width={1000}
+                            height={700}
+                            objectFit="cover"
+                        />
+                    </div>
 
                     <Carousel.Caption>
                         <h3>MARTHA & JOEY</h3>
@@ -41,13 +47,16 @@ function ControlledCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/images/wedding3.jpg"
-                        alt="Third slide"
-                        // width={1000}
-                        // height={700}
-                    />
+                    <div className="slider__img">
+                        <Image
+                            className="d-block w-100"
+                            src="/assets/images/wd2.jpg"
+                            alt="Third slide"
+                            width={1000}
+                            height={700}
+                            objectFit="cover"
+                        />
+                    </div>
 
                     <Carousel.Caption>
                         <h3>SIMONA & NOEL</h3>

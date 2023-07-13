@@ -1,17 +1,14 @@
-.carousel-item img {
-    height: 500px;
-    width: auto;
-    object-fit: cover;
-    filter: brightness(0.8);
+.slider__img img {
+    filter: brightness(80%) blur(2px);
 }
-
 .carousel-caption {
     h3 {
-        font-size: 100px;
-        margin-bottom: 50px;
+        font-size: 112px;
+        margin-bottom: 80px;
     }
     p {
-        margin-bottom: 140px;
+        margin-bottom: 240px;
+        font-size: 27px;
     }
 }
 .carousel {
@@ -19,7 +16,7 @@
 }
 .slider__button {
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 47%;
 }
 
@@ -27,7 +24,7 @@
 @media (min-width: 1024px) {
     .slider__button {
         position: absolute;
-        top: 50%;
+        top: 62%;
         left: 47%;
     }
 }
@@ -35,16 +32,17 @@
 @media (min-width: 740px) and (max-width: 1023px) {
     .slider__button {
         position: absolute;
-        top: 38%;
+        top: 52%;
         left: 42%;
     }
     .carousel-caption {
         h3 {
-            font-size: 70px;
+            font-size: 80px;
             margin-bottom: 50px;
         }
         p {
-            margin-bottom: 140px;
+            margin-bottom: 180px;
+            font-size: 24px;
         }
     }
 }
@@ -53,6 +51,12 @@
     .slider__area {
         padding: 0;
     }
+
+    .slider__img {
+        width: 500px;
+        height: auto;
+    }
+
     .carousel-item img {
         height: auto;
         width: 500px;
@@ -61,16 +65,16 @@
     }
     .slider__button {
         position: absolute;
-        top: 27%;
+        top: 36%;
         left: 36%;
     }
     .carousel-caption {
         h3 {
-            font-size: 30px;
+            font-size: 40px;
             margin-bottom: 20px;
         }
         p {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
             font-size: 14px;
         }
     }
