@@ -1,0 +1,18 @@
+.product__add {
+    opacity: 0;
+    margin-top: 0;
+}
+
+.product__wrapper:hover .product__add {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

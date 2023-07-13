@@ -1,0 +1,28 @@
+.footer-address,
+.footer-pre-phone,
+.footer-phone,
+.footer-mail {
+    position: relative;
+    display: block;
+}
+
+.footer-address::after,
+.footer-pre-phone::after,
+.footer-phone::after,
+.footer-mail::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.footer-address:hover::after,
+.footer-pre-phone:hover::after,
+.footer-phone:hover::after,
+.footer-mail:hover::after {
+    width: 100%;
+}

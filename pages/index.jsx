@@ -6,12 +6,13 @@ import SocialIcon from '@/components/common/SocialIcon';
 import { Img } from '@/components/common/Img';
 import Button from '@/components/common/Button';
 
-import People from '@/components/common/People';
 import Link from 'next/link';
 import Map from '@/components/common/Map';
 import Heading from '@/components/common/Heading';
 import SubHeading from '@/components/common/SubHeading';
 import ImagePoint from '@/components/common/ImagePoint';
+import ImageHighlight from '@/components/common/ImageHighlight';
+import Product from '@/components/common/Product';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,14 +36,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                     </section>
                     <section className="story__area pt-80">
                         <div className="container d-flex flex-column align-items-center">
-                            <Image
-                                src="/assets/images/bird.png"
-                                alt="story wedding"
-                                width={300}
-                                height={160}
-                                objectFit="cover"
-                            />
-
+                            <ImageHighlight src="/assets/images/bird.png" width="300" height="160" alt="image bird" />
                             <div className="story__area__heading">
                                 <Heading
                                     title="Our love story"
@@ -80,28 +74,44 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     <SocialIcon />
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-12 col-sm-6 d-flex">
-                                    <div className="story-week box">
-                                        <h4>24</h4>
-                                        <span>Weeks</span>
+                            <div className="story__time-wrapper">
+                                <div className="row">
+                                    <div className="col-lg-1"></div>
+                                    <div className="col-12 col-sm-6 col-lg-2">
+                                        <div className="box story-week box">
+                                            <h4>24</h4>
+                                            <span>Weeks</span>
+                                        </div>
                                     </div>
-                                    <div className="story-day box">
-                                        <h4>04</h4>
-                                        <span>Days</span>
+
+                                    <div className="col-12 col-sm-6 col-lg-2">
+                                        <div className="story-day box">
+                                            <h4>04</h4>
+                                            <span>Days</span>
+                                        </div>
                                     </div>
-                                    <div className="story-hour box">
-                                        <h4>21</h4>
-                                        <span>Weeks</span>
+
+                                    <div className="col-12 col-sm-6 col-lg-2">
+                                        <div className="story-hour box">
+                                            <h4>21</h4>
+                                            <span>Weeks</span>
+                                        </div>
                                     </div>
-                                    <div className="story-minute box">
-                                        <h4>59</h4>
-                                        <span>Minutes</span>
+
+                                    <div className="col-12 col-sm-6 col-lg-2">
+                                        <div className="story-minute box">
+                                            <h4>59</h4>
+                                            <span>Minutes</span>
+                                        </div>
                                     </div>
-                                    <div className="story-second box">
-                                        <h4>24</h4>
-                                        <span>Second</span>
+
+                                    <div className="col-12 col-sm-6 col-lg-2">
+                                        <div className="story-second box">
+                                            <h4>24</h4>
+                                            <span>Second</span>
+                                        </div>
                                     </div>
+                                    <div className="col-lg-1"></div>
                                 </div>
                             </div>
                         </div>
@@ -109,13 +119,13 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <ImagePoint
                                 title="SAVE THE DATE"
                                 subTitle="WE WOULD LIKE TO INVITE YOU TO CELEBRATE WITH US"
-                                src="assets/images/h5-parallax-01.jpg"
+                                src="/assets/images/h5-parallax-01.jpg"
                             />
                         </div>
                     </section>
-                    <section className="gallery__area">
-                        <div className="container">
-                            <Img src="/assets/images/bird-img.jpg" />
+                    <section className="gallery__area pt-80">
+                        <div className="container text-center align-items-center d-flex flex-column">
+                            <ImageHighlight src="/assets/images/bird.png" width="300" height="160" alt="image bird" />
 
                             <div className="gallery__area__heading">
                                 <h3 className="section__title">OUR LOVE GALLERY</h3>
@@ -126,210 +136,396 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     exercitation
                                 </p>
                             </div>
-                            <div className="row">
+                            <div className="row gallery__image-wrapper pt-60">
                                 <div className="col-lg-6 col-sm-12 col-12">
-                                    <img src="/assets/images/h5-img-2.jpg" alt="" />
-                                </div>
-                                <div className="mt-2 col-lg-3 col-sm-6 col-12">
-                                    <img src="/assets/images/h5-img-3.jpg" alt="" />
-                                    <img src="/assets/images/h5-img-4.jpg" alt="" className="mt-3" />
+                                    <div className="gallery__image">
+                                        <Image
+                                            src="/assets/images/h5-img-2.jpg"
+                                            alt="gallery__image"
+                                            width={650}
+                                            height={700}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
                                 <div className="col-lg-3 col-sm-6 col-12">
-                                    <img src="/assets/images/h5-img-05.jpg" alt="" className="mt-3" />
+                                    <div className="gallery__image">
+                                        <Image
+                                            src="/assets/images/h5-img-3.jpg"
+                                            alt="gallery__image"
+                                            width={330}
+                                            height={350}
+                                            objectFit="cover"
+                                        />
+                                    </div>
+                                    <div className="gallery__image">
+                                        <Image
+                                            src="/assets/images/h5-img-4.jpg"
+                                            alt="gallery__image gallery__image"
+                                            width={330}
+                                            height={350}
+                                            objectFit="cover"
+                                            className="mt-1"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-sm-6 col-12">
+                                    <div className="gallery__image">
+                                        <Image
+                                            src="/assets/images/h5-img-05.jpg"
+                                            alt="gallery__image"
+                                            width={650}
+                                            height={700}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section className="scroll__area">
-                        <div className="container-fluid d-flex">
-                            <div className="home-scroll-text">
+                    <section className="scroll__area pt-80">
+                        <div className="container-fluid d-flex scroll-group">
+                            <div className="scroll-text">
                                 <i class="fa-solid fa-diamond"></i>
                                 ENDLESS INSPIRATIONS
                             </div>
-                            <div className="home-scroll-text">
+                            <div className="scroll-text">
                                 <i class="fa-solid fa-diamond"></i>
                                 AGNIFICENT WEDDING
                             </div>
-                            <div className="home-scroll-text">
+                            <div className="scroll-text">
                                 <i class="fa-solid fa-diamond"></i>
                                 BEAUTIFUL IDEAS
                             </div>
-                            <div className="home-scroll-text">
+                            <div className="scroll-text">
                                 <i class="fa-solid fa-diamond"></i>
                                 ENDLESS INSPIRATIONS{' '}
                             </div>
-                            <div className="home-scroll-text">
+                            <div className="scroll-text">
                                 <i class="fa-solid fa-diamond"></i>
                                 AGNIFICENT WEDDING
                             </div>
+                            <div className="scroll-text">
+                                <i class="fa-solid fa-diamond"></i>
+                                BEAUTIFUL IDEAS
+                            </div>
                         </div>
                     </section>
-                    <section className="timeline__area">
+                    <section className="timeline__area pt-80">
                         <div className="container">
                             <div className="timeline__area__heading">
-                                <h3 className="section__title">LOVE STORY TIMELINE</h3>
-                                <h4 className="section__sub__title">TAKE A LOOK AT OUR STORY</h4>
+                                <Heading title="LOVE STORY TIMELINE" subTitle="TAKE A LOOK AT OUR STORY" />
                             </div>
                             <div className="timeline__process">
-                                <div className="row">
+                                <div className="row align-items-center">
+                                    <span className="timeline__process-wire"></span>
                                     <div className="col-12 col-sm-6 col-lg-3">
-                                        <img src="/assets/images/h5-decor-01.png" alt="" />
-                                        <div className="process-wrapper">
-                                            <h3 className="process__tittle">FIRST MEETING</h3>
-                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        <div className="timeline__image d-flex  justify-content-center">
+                                            <Image
+                                                src="/assets/images/h5-decor-01.png"
+                                                alt="timeline image"
+                                                width={200}
+                                                height={200}
+                                                objectFit="cover"
+                                            />
+                                        </div>
+                                        <div className="process-wrapper text-center ">
+                                            <h3 className="section__title-4">FIRST MEETING</h3>
+                                            <h5 className="section__sub-title-4">A FRIEND&apos;S PARTY</h5>
+                                            <p className="section__des-4 mt-3">
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
-                                        <img src="/assets/images/h5-decor-02.png" alt="" />
+                                        <div className="timeline__image">
+                                            <Image
+                                                src="/assets/images/h5-decor-02.png"
+                                                alt="timeline image"
+                                                width={200}
+                                                height={200}
+                                                objectFit="cover"
+                                            />
+                                        </div>
+
                                         <div className="process-wrapper">
-                                            <h3 className="process__tittle">FIRST MEETING</h3>
-                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            <h3 className="section__title-4">FIRST MEETING</h3>
+                                            <h5 className="section__sub-title-4">A FRIEND&apos;S PARTY</h5>
+                                            <p className="section__des-4 mt-3">
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
-                                        <img src="/assets/images/h5-decor-03.png" alt="" />
+                                        <div className="timeline__image">
+                                            <Image
+                                                src="/assets/images/h5-decor-03.png"
+                                                alt="timeline image"
+                                                width={200}
+                                                height={200}
+                                                objectFit="cover"
+                                            />
+                                        </div>
+
                                         <div className="process-wrapper">
-                                            <h3 className="process__tittle">FIRST MEETING</h3>
-                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            <h3 className="section__title-4">FIRST MEETING</h3>
+                                            <h5 className="section__sub-title-4">A FRIEND&apos;S PARTY</h5>
+                                            <p className="section__des-4 mt-3">
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="col-12 col-sm-6 col-lg-3">
-                                        <img src="/assets/images/h5-decor-04.png" alt="" />
+                                        <div className="timeline__image">
+                                            <Image
+                                                src="/assets/images/h5-decor-04.png"
+                                                alt="timeline image"
+                                                width={200}
+                                                height={200}
+                                                objectFit="cover"
+                                            />
+                                        </div>
+
                                         <div className="process-wrapper">
-                                            <h3 className="process__tittle">FIRST MEETING</h3>
-                                            <h5 className="process__sub-tittle">A FRIEND&apos;S PARTY</h5>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                            <h3 className="section__title-4">FIRST MEETING</h3>
+                                            <h5 className="section__sub-title-4">A FRIEND&apos;S PARTY</h5>
+                                            <p className="section__des-4 mt-3">
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="container-fluid">
-                            {/* <div>
-                                <img src="assets/images/h5-parallax-02.jpg" alt="story wedding" />
-                                <h3 className="section__title-3">SIMONA & NOEL</h3>
-                                <p className="section__sub-title-3">
-                                    LET US KNOW IF YOU ARE COMING TO CELEBRATE OUR LOVE
-                                </p>
-                                <Button className="section__button" title="RSVP" />
-                            </div> */}
+                        <div className="container-fluid pt-80">
+                            <ImagePoint
+                                title="SIMONA & NOEL"
+                                subTitle="LET US KNOW IF YOU ARE COMING TO CELEBRATE OUR LOVE"
+                                src="assets/images/h5-parallax-02.jpg"
+                                alt="SIMONA wedding"
+                            />
                         </div>
                     </section>
-                    <section className="brides__area">
+                    <section className="brides__area pt-80">
                         <div className="container">
-                            <div className="brides__area__heading">
-                                <h3 className="section__title">BRIDESMAIDES & GROOMSMEN</h3>
-                                <h4 className="section__sub__title">MAGIC CAPTURE</h4>
-                                <p className="section__des__title">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                </p>
-                            </div>
-                            <div>
-                                <People className="couple" />
+                            <Heading
+                                title="BRIDESMAIDES & GROOMSMEN"
+                                subTitle="MAGIC CAPTURE"
+                                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam error, enim ea minima dolore iste
+                corrupti. Tenetur commodi facilis, expedita magnam officiis asperiores unde recusandae accusamus enim
+                modi, adipisci ea."
+                            />
+                            <div className="pt-60 brides__grooms-wrapper">
+                                <div className="row ">
+                                    <div className="col-12 col-sm-4 col-lg-4">
+                                        <div className="brides__grooms-image">
+                                            <Image
+                                                src="/assets/images/team-img-2.png"
+                                                alt="brides grooms image"
+                                                width={300}
+                                                height={300}
+                                            />
+                                            <div className="brides__grooms-effect">
+                                                <img
+                                                    src="/assets/images/team-decor-img.png"
+                                                    alt="brides grooms image"
+                                                />
+                                            </div>
+                                        </div>
+                                        <h4 className="section__title-4">ANNA STILL</h4>
+                                        <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        <div>
+                                            <div className="brides__grooms-image">
+                                                <Image
+                                                    src="/assets/images/team-img-4.png"
+                                                    alt="brides grooms image"
+                                                    width={300}
+                                                    height={300}
+                                                />
+                                                <div className="brides__grooms-effect">
+                                                    <img
+                                                        src="/assets/images/team-decor-img.png"
+                                                        alt="brides grooms image"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <h4 className="section__title-4">LAURA MITTE</h4>
+                                            <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-4 col-lg-4">
+                                        <div>
+                                            <div className="brides__grooms-image">
+                                                <Image
+                                                    src="/assets/images/team-img-7.png"
+                                                    alt="brides grooms image"
+                                                    width={300}
+                                                    height={300}
+                                                />
+                                                <div className="brides__grooms-effect">
+                                                    <img
+                                                        src="/assets/images/team-decor-img.png"
+                                                        alt="brides grooms image"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <h4 className="section__title-4">SIMONA JAGGER</h4>
+                                            <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        </div>
+                                        <div>
+                                            <div className="brides__grooms-image">
+                                                <Image
+                                                    src="/assets/images/team-img-4.png"
+                                                    alt="brides grooms image"
+                                                    width={300}
+                                                    height={300}
+                                                />
+                                                <div className="brides__grooms-effect">
+                                                    <img
+                                                        src="/assets/images/team-decor-img.png"
+                                                        alt="brides grooms image"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <h4 className="section__title-4">SIMONA JAGGER</h4>
+                                            <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-sm-4 col-lg-4">
+                                        <div>
+                                            <div className="brides__grooms-image">
+                                                <Image
+                                                    src="/assets/images/team-img-3.png"
+                                                    alt="brides grooms image"
+                                                    width={300}
+                                                    height={300}
+                                                />
+                                                <div className="brides__grooms-effect">
+                                                    <img
+                                                        src="/assets/images/team-decor-img.png"
+                                                        alt="brides grooms image"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <h4 className="section__title-4">SIMONA JAGGER</h4>
+                                            <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        </div>
+                                        <div>
+                                            <div className="brides__grooms-image">
+                                                <Image
+                                                    src="/assets/images/team-img-6.png"
+                                                    alt="brides grooms image"
+                                                    width={300}
+                                                    height={300}
+                                                />
+                                                <div className="brides__grooms-effect">
+                                                    <img
+                                                        src="/assets/images/team-decor-img.png"
+                                                        alt="brides grooms image"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <h4 className="section__title-4">SIMONA JAGGER</h4>
+                                            <h5 className="section__sub-title-4">BRIEDMAID</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="container-fluid">
-                            {/* <div>
-                                <img src="/assets/images/h5-parallax-03.jpg" alt="" />
-                                <h3 className="section__title-3">WE CAN&aposT WAIT TO SEE YOU</h3>
-                                <p className="section__sub-title-3">SUNADAY 17, JANUART 2023 AT 17:00</p>
-                                <Button className="section__button" title="RSVP" />
-                            </div> */}
+                        <div className="container-fluid pt-80">
+                            <ImagePoint
+                                title="WE CAN'T WAIT TO SEE"
+                                subTitle="SUNADAY 17, JANUART 2023 AT 17:00"
+                                src="assets/images/h5-parallax-03.jpg"
+                                alt="SIMONA wedding"
+                            />
                         </div>
-                        <div className="container">
+                        <div className="container pt-80">
                             <div className="row">
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/hover-client-new.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/hover-client-new.png"
+                                            alt="introduce image"
+                                            width={300}
+                                            height={300}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/h3-client-2.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/h3-client-2.png"
+                                            alt="introduce image"
+                                            width={300}
+                                            height={300}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/h3-client-hover-3.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/h3-client-hover-3.png"
+                                            alt="introduce image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/h3-client-hover-04.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/h3-client-hover-04.png"
+                                            alt="introduce image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/h3-client-hover-05.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/h3-client-hover-05.png"
+                                            alt="introduce image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2 box">
-                                    <img src="/assets/images/h3-client-hover-6.png" alt="" />
+                                <div className="col-12 col-sm-3 col-lg-2">
+                                    <div className="box introduce-image">
+                                        <Image
+                                            src="/assets/images/h3-client-hover-6.png"
+                                            alt="introduce image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section className="partners__area">
+                    <section className="partners__area pt-80">
                         <div className="container">
                             <div className="partners__area__heading">
-                                <h3 className="section__title">OUR PARTNERS</h3>
-                                <h4 className="section__sub__title">WEDDING ORGANIZATION</h4>
+                                <Heading
+                                    title="OUR PARTNERS"
+                                    subTitle="WEDDING ORGANIZATION"
+                                    desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam error, enim ea minima dolore iste
+                corrupti. Tenetur commodi facilis, expedita magnam officiis asperiores unde recusandae accusamus enim
+                modi, adipisci ea."
+                                />
                             </div>
-                            <div className="row">
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div>
-                                        <div className="partner__img">
-                                            <Link href="">
-                                                <img src="/assets/images/partners/shop-15-img-1.jpg" alt="" />
-                                            </Link>
-                                        </div>
-                                        <div className="partner__effect"></div>
-                                    </div>
-                                    <div className="partner__card-group">
-                                        <h3>INVITATIONS</h3>
-                                        <h4>$420.00</h4>
-                                        <span>ADD TO CART</span>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div>
-                                        <div className="partner__img">
-                                            <Link href="">
-                                                <img src="/assets/images/partners/shop-18-img-1.jpg" alt="" />
-                                            </Link>
-                                        </div>
-                                        <div className="partner__effect"></div>
-                                    </div>
-                                    <div className="partner__card-group">
-                                        <h3>INVITATIONS</h3>
-                                        <h4>$420.00</h4>
-                                        <span>ADD TO CART</span>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div>
-                                        <div className="partner__img">
-                                            <Link href="">
-                                                <img src="/assets/images/partners/shop-24-img-01.jpg" alt="" />
-                                            </Link>
-                                        </div>
-                                        <div className="partner__effect"></div>
-                                    </div>
-                                    <div className="partner__card-group">
-                                        <h3>INVITATIONS</h3>
-                                        <h4>$420.00</h4>
-                                        <span>ADD TO CART</span>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-lg-3">
-                                    <div>
-                                        <div className="partner__img">
-                                            <Link href="">
-                                                <img src="/assets/images/partners/shop-25-img-01.jpg" alt="" />
-                                            </Link>
-                                        </div>
-                                        <div className="partner__effect"></div>
-                                    </div>
-                                    <div className="partner__card-group">
-                                        <h3>INVITATIONS</h3>
-                                        <h4>$420.00</h4>
-                                        <span>ADD TO CART</span>
-                                    </div>
-                                </div>
+                            <div className="partners__product">
+                                <Product />
                             </div>
                         </div>
                         <div className="map__area">
