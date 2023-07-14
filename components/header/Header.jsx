@@ -7,8 +7,9 @@ import { AiOutlineClose } from 'react-icons/ai';
 import SocialIcon from '../common/SocialIcon';
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
@@ -41,11 +42,22 @@ export default function Header() {
                 }`}
             >
                 <div className="container-fluid">
-                    <div className="d-flex pl-60 pr-60 justify-content-between ">
+                    <div className={`d-flex pl-60 pr-60 justify-content-between ${showMenu ? 'show-menu' : ''} `}>
                         <div className="header__main__search d-flex align-items-center">
                             <div>
                                 <i className="bi bi-search"></i>
                                 <input type="text" placeholder="Search..." />
+                            </div>
+                            <div className="header__logo-mobile">
+                                <Link href="/">
+                                    <Image
+                                        src="/assets/images/logo/logo-dark-new-02.png"
+                                        className="items-center"
+                                        alt="header logo"
+                                        width={190}
+                                        height={80}
+                                    />
+                                </Link>
                             </div>
                         </div>
                         <nav className="header__main__content d-flex align-items-center">
@@ -270,6 +282,8 @@ export default function Header() {
                                 </nav>
                             ) : null}
                         </div>
+
+                        {/* Toggle Mobile */}
                     </div>
                 </div>
             </div>

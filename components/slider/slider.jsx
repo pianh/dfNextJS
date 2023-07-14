@@ -17,7 +17,7 @@ function ControlledCarousel() {
                     <div className="slider__img">
                         <Image
                             className="d-block w-100"
-                            src="/assets/images/wd3.jpeg"
+                            src="/assets/images/wedding1.jpg"
                             alt="First slide"
                             width={1000}
                             height={700}
@@ -33,7 +33,7 @@ function ControlledCarousel() {
                     <div className="slider__img">
                         <Image
                             className="d-block w-100"
-                            src="/assets/images/wd1.jpg"
+                            src="/assets/images/wedding2.jpg"
                             alt="Second slide"
                             width={1000}
                             height={700}
@@ -50,7 +50,7 @@ function ControlledCarousel() {
                     <div className="slider__img">
                         <Image
                             className="d-block w-100"
-                            src="/assets/images/wd2.jpg"
+                            src="/assets/images/wedding3.jpg"
                             alt="Third slide"
                             width={1000}
                             height={700}
