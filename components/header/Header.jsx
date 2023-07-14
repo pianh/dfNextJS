@@ -6,19 +6,15 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import SocialIcon from '../common/SocialIcon';
 export default function Header() {
-    const [isHovered, setIsHovered] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(true);
     const [isSticky, setIsSticky] = useState(false);
-    const [showMenu, setShowMenu] = useState(false);
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
+    const [showMobile, setShowMobile] = useState(false);
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p);
+    };
+    const menuToggleMobileHandler = () => {
+        setShowMobile((p) => !p);
     };
 
     useEffect(() => {
@@ -42,8 +38,8 @@ export default function Header() {
                 }`}
             >
                 <div className="container-fluid">
-                    <div className={`d-flex pl-60 pr-60 justify-content-between ${showMenu ? 'show-menu' : ''} `}>
-                        <div className="header__main__search d-flex align-items-center">
+                    <div className="d-flex pl-60 pr-60 justify-content-between header__wrapper">
+                        <div className="header__main__left d-flex align-items-center">
                             <div>
                                 <i className="bi bi-search"></i>
                                 <input type="text" placeholder="Search..." />
@@ -54,14 +50,18 @@ export default function Header() {
                                         src="/assets/images/logo/logo-dark-new-02.png"
                                         className="items-center"
                                         alt="header logo"
-                                        width={190}
-                                        height={80}
+                                        width={110}
+                                        height={55}
                                     />
                                 </Link>
                             </div>
                         </div>
-                        <nav className="header__main__content d-flex align-items-center">
-                            <ul className="d-flex ">
+                        <nav
+                            className={`header__main__content d-flex align-items-center ${
+                                showMobile ? 'show-mobile' : ''
+                            }`}
+                        >
+                            <ul className="d-flex">
                                 <li>
                                     <Link className="has-dropdown active" href="/">
                                         Home
@@ -241,12 +241,7 @@ export default function Header() {
                             </ul>
                         </nav>
                         <div className="header__main__sidebar d-flex align-items-center">
-                            <div
-                                className={`header__main__toggle ${isHovered ? '' : 'move'}`}
-                                onMouseEnter={handleMouseEnter}
-                                onMouseLeave={handleMouseLeave}
-                                onClick={menuToggleHandler}
-                            >
+                            <div className="header__main__toggle " onClick={menuToggleHandler}>
                                 <div className="diamond-container">
                                     <i className="fa-solid fa-diamond"></i>
                                     <i className="fa-solid fa-diamond"></i>
@@ -254,7 +249,7 @@ export default function Header() {
                                 </div>
                             </div>
                             {!menuOpen ? (
-                                <nav className="sidebar">
+                                <nav className="sidebar sidebar-visible">
                                     <span className="menu__toggle__close move-right" onClick={menuToggleHandler}>
                                         <AiOutlineClose />
                                     </span>
@@ -282,12 +277,25 @@ export default function Header() {
                                 </nav>
                             ) : null}
                         </div>
-
                         {/* Toggle Mobile */}
+                        <div className="header__toggle-mobile">
+                            {showMobile ? (
+                                <i
+                                    class="fa-solid fa-xmark"
+                                    onClick={menuToggleMobileHandler}
+                                    style={{ fontSize: '24px' }}
+                                ></i>
+                            ) : (
+                                <div className="diamond-container" onClick={menuToggleMobileHandler}>
+                                    <i className="fa-solid fa-diamond"></i>
+                                    <i className="fa-solid fa-diamond"></i>
+                                    <i className="fa-solid fa-diamond"></i>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="header__sticky"></div>
         </div>
     );
 }

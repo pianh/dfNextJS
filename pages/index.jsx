@@ -13,12 +13,43 @@ import SubHeading from '@/components/common/SubHeading';
 import ImagePoint from '@/components/common/ImagePoint';
 import ImageHighlight from '@/components/common/ImageHighlight';
 import Product from '@/components/common/Product';
+import { useEffect, useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home({ resultsOne, resultsTwo }) {
     // console.log(resultsOne);
     // console.log(resultsTwo);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const offset = 1000;
+
+            if (scrollTop > windowHeight - offset) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        // Gọi hàm handleScroll khi cuộn chuột
+        window.addEventListener('scroll', handleScroll);
+
+        // Thực hiện việc cập nhật dữ liệu
+        const refreshList = () => {
+            // Cập nhật danh sách (nếu cần)
+        };
+        refreshList();
+
+        // Xóa bỏ sự kiện cuộn chuột khi unmount component
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <Head>
@@ -34,7 +65,9 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <ControlledCarousel />
                         </div>
                     </section>
-                    <section className="story__area pt-80">
+                    <section
+                        className={`story__area pt-80 ${isVisible ? 'animate__animated animate__fadeInRight' : ''}`}
+                    >
                         <div className="container d-flex flex-column align-items-center">
                             <ImageHighlight src="/assets/images/bird.png" width="300" height="160" alt="image bird" />
                             <div className="story__area__heading">
@@ -126,7 +159,9 @@ export default function Home({ resultsOne, resultsTwo }) {
                             />
                         </div>
                     </section>
-                    <section className="gallery__area pt-80">
+                    <section
+                        className={`gallery__area pt-80 ${isVisible ? 'animate__animated animate__fadeInRight' : ''}`}
+                    >
                         <div className="container text-center align-items-center d-flex flex-column">
                             <ImageHighlight src="/assets/images/bird.png" width="300" height="160" alt="image bird" />
 
