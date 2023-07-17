@@ -20,6 +20,12 @@
 .pt-80 {
     padding-top: 80px;
 }
+.pb-80 {
+    padding-bottom: 80px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
 .section_logo-icon {
     width: 300px;
     height: 160px;
@@ -44,7 +50,7 @@
     margin-bottom: 20px;
 }
 .section__des {
-    padding: 0 100px;
+    padding: 0 200px;
     color: var(--tp-heading-sub2);
     font-family: 'Arimo';
     line-height: 30px;
@@ -157,7 +163,7 @@
     animation: glowingBorder 2s infinite;
     &:hover {
         border: 1px solid var(--tp-common-green);
-        background-color: var(--tp-common-violet-2);
+
         box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
@@ -198,9 +204,10 @@
 
     .section__title-3 {
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 10%;
         font-size: 77px;
+        line-height: 77px;
     }
 
     .section__sub-title-3 {

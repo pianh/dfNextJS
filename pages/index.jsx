@@ -168,7 +168,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <div className="gallery__area__heading">
                                 <h3 className="section__title">OUR LOVE GALLERY</h3>
                                 <h4 className="section__sub__title">MAGIC CAPTURED</h4>
-                                <p className="section__des__title">
+                                <p className="section__des">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation
@@ -180,19 +180,19 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h5-img-2.jpg"
                                             alt="gallery__image"
-                                            width={700}
-                                            height={700}
+                                            width={740}
+                                            height={740}
                                             objectFit="cover"
                                         />
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-12">
+                                <div className="col-lg-3 col-sm-6 col-12 d-flex flex-column align-item-center justify-content-between">
                                     <div className="gallery__image">
                                         <Image
                                             src="/assets/images/h5-img-3.jpg"
                                             alt="gallery__image"
-                                            width={330}
-                                            height={345}
+                                            width={310}
+                                            height={310}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -200,10 +200,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h5-img-4.jpg"
                                             alt="gallery__image gallery__image"
-                                            width={330}
-                                            height={345}
+                                            width={310}
+                                            height={310}
                                             objectFit="cover"
-                                            className="mt-2"
+                                            className=""
                                         />
                                     </div>
                                 </div>
@@ -212,8 +212,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h5-img-05.jpg"
                                             alt="gallery__image"
-                                            width={650}
-                                            height={700}
+                                            width={640}
+                                            height={640}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -224,27 +224,27 @@ export default function Home({ resultsOne, resultsTwo }) {
                     <section className="scroll__area pt-80">
                         <div className="container-fluid d-flex scroll-group">
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 ENDLESS INSPIRATIONS
                             </div>
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 AGNIFICENT WEDDING
                             </div>
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 BEAUTIFUL IDEAS
                             </div>
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 ENDLESS INSPIRATIONS{' '}
                             </div>
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 AGNIFICENT WEDDING
                             </div>
                             <div className="scroll-text">
-                                <i class="fa-solid fa-diamond"></i>
+                                <i className="fa-solid fa-diamond"></i>
                                 BEAUTIFUL IDEAS
                             </div>
                         </div>
@@ -493,8 +493,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/hover-client-new.png"
                                             alt="introduce image"
-                                            width={300}
-                                            height={300}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -504,8 +504,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h3-client-2.png"
                                             alt="introduce image"
-                                            width={300}
-                                            height={300}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -515,8 +515,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h3-client-hover-3.png"
                                             alt="introduce image"
-                                            width={200}
-                                            height={200}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -526,8 +526,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h3-client-hover-04.png"
                                             alt="introduce image"
-                                            width={200}
-                                            height={200}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -537,8 +537,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h3-client-hover-05.png"
                                             alt="introduce image"
-                                            width={200}
-                                            height={200}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>
@@ -548,8 +548,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         <Image
                                             src="/assets/images/h3-client-hover-6.png"
                                             alt="introduce image"
-                                            width={200}
-                                            height={200}
+                                            width={170}
+                                            height={170}
                                             objectFit="cover"
                                         />
                                     </div>

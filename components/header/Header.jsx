@@ -5,6 +5,7 @@ import Sidebar from '../sidebar/Sidebar';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import SocialIcon from '../common/SocialIcon';
+import { GrClose } from 'react-icons/gr';
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(true);
     const [isSticky, setIsSticky] = useState(false);
@@ -280,11 +281,10 @@ export default function Header() {
                         {/* Toggle Mobile */}
                         <div className="header__toggle-mobile">
                             {showMobile ? (
-                                <i
-                                    class="fa-solid fa-xmark"
+                                <GrClose
                                     onClick={menuToggleMobileHandler}
-                                    style={{ fontSize: '24px' }}
-                                ></i>
+                                    style={{ fontSize: '33px', opacity: '0.6' }}
+                                />
                             ) : (
                                 <div className="diamond-container" onClick={menuToggleMobileHandler}>
                                     <i className="fa-solid fa-diamond"></i>

@@ -43,7 +43,7 @@ function Footer() {
                                 </span>
                                 <div className="footer-input mt-3">
                                     <input type="text" name="" id="" placeholder="Your mail..." />
-                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>

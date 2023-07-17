@@ -1,0 +1,15 @@
+.header__bottom {
+    position: relative;
+    &_img {
+        width: 100%;
+        height: auto;
+        filter: blur(2px);
+    }
+    .-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        font-size: 65px;
+        color: var(--color-white);
+    }
+}

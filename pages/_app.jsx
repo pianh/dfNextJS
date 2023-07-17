@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         // Simulate data loading
         setTimeout(() => {
             setIsLoading(false);
-        }, 1200);
+        }, 500);
     }, []);
 
     return (

@@ -27,6 +27,10 @@
     left: 47%;
 }
 
+.carousel-indicators button {
+    display: none;
+}
+
 //Laptop and Des
 @media (min-width: 1024px) {
     .slider__button {

@@ -16,14 +16,14 @@
 .story-hour,
 .story-minute,
 .story-second {
-    width: 200px;
-    height: 200px;
+    min-width: 190px;
+    min-height: 190px;
     border: 1px solid var(--color-main-border);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-right: 40px;
     h4 {
         font-size: 80px;
         line-height: 80px;
@@ -42,8 +42,9 @@
 .gallery__image {
     position: relative;
     overflow: hidden;
-    max-width: 700px;
-    max-height: 700px;
+    display: flex;
+    max-width: 650px;
+    max-height: 650px;
     img {
         object-fit: cover;
         transition: transform 0.3s ease-in-out;
@@ -109,8 +110,8 @@
 }
 
 .box {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     border: 1px solid var(--color-main-border);
     display: flex;
     justify-content: center;
@@ -193,12 +194,43 @@
             transition: transform 0.4s ease-in-out;
         }
     }
+    .story__image {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 700px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .gallery__image {
+        max-width: 700px;
+        max-height: 700px;
+        margin-top: 25px;
+        img {
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover img {
+            transform: translateX(3px);
+            filter: brightness(80%);
+        }
+    }
+    .gallery__image:nth-child(4) {
+        margin-bottom: 0;
+        max-height: 700px;
+    }
 }
 
 @media (max-width: 740px) {
     .story__image {
-        width: 400px;
+        width: 100%;
         height: 400px;
+        display: flex;
+        justify-content: center;
         img {
             width: auto;
             height: 380px;
@@ -230,7 +262,7 @@
         img {
             width: 400px;
             height: auto;
-            object-fit: contain;
+            object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
     }
@@ -238,9 +270,9 @@
         margin-bottom: 10px;
     }
     .box {
-        width: 350px;
-        height: 350px;
-        margin: 10px 10px;
+        width: 100%;
+        height: 400px;
+        margin: 10px 0px;
     }
     .product__card {
         margin-bottom: 30px;
