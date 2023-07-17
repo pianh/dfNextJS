@@ -13,3 +13,12 @@ export default function RootLayout({ children }) {
         </div>
     );
 }
+
+export function AlternateLayout({ children }) {
+    return (
+        <div>
+            <Header />
+            {children}
+        </div>
+    );
+}
