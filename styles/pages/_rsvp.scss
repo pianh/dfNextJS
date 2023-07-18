@@ -1,0 +1,66 @@
+.rsvp__wrapper {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    .rsvp__form {
+        text-align: center;
+        margin-top: 50px;
+        input,
+        textarea {
+            padding: 15px 20px;
+            margin-top: 10px;
+            border: 1px solid var(--color-header-border);
+            width: 100%;
+            font-size: 14px;
+            color: #dcccc0;
+        }
+        textarea {
+            height: 140px;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none;
+            color: #000;
+        }
+        .-attend {
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 14px;
+
+            .-attend-left,
+            .-attend-right {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    display: flex;
+                    input {
+                        width: 15px;
+                        height: 15px;
+                        margin: 0;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            .-attend-left {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .-attend-right {
+                justify-content: center;
+            }
+        }
+    }
+    .rsvp__button {
+        color: var(--tp-heading-primary);
+        border: 1px solid var(--tp-heading-primary);
+        animation: none;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+    .rsvp__slider {
+        margin: 80px 0;
+        padding-top: 35px;
+        padding-bottom: 80px;
+        border-top: 1px solid var(--color-header-border);
+    }
+}

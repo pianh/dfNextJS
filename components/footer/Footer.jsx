@@ -3,7 +3,7 @@ import SocialIcon from '../common/SocialIcon';
 
 function Footer() {
     return (
-        <footer className="footer pt-30">
+        <footer className="footer">
             <div className="container-fluid">
                 <div className="footer-top">
                     <div className="row">

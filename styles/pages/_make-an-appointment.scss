@@ -1,0 +1,21 @@
+.maa__wrapper {
+    margin-top: 90px;
+    .container-fluid {
+        display: flex;
+        padding: 0;
+    }
+    .col {
+        padding: 0;
+    }
+    .maa-left {
+        .-img {
+            width: 800px;
+            height: 1000px;
+        }
+    }
+    .maa-right {
+        .section__sub__title {
+            margin-top: 12px;
+        }
+    }
+}

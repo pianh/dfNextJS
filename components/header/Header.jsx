@@ -126,23 +126,28 @@ export default function Header() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Accomodation
+                                            <Link className="has-dropdown" href="/make-an-appointment">
+                                                Make an Appointment
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Gift Registry
+                                            <Link className="has-dropdown" href="/rsvp">
+                                                RSVP Page
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Our Services
+                                            <Link className="has-dropdown" href="/contact-us">
+                                                Contact US
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Our Story
+                                            <Link className="has-dropdown" href="/get-in-touch">
+                                                Get In Touch
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="has-dropdown" href="/faq">
+                                                FAQ Page
                                             </Link>
                                         </li>
                                     </ul>
