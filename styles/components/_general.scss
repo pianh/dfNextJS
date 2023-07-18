@@ -100,22 +100,26 @@
 
 .section__title-3 {
     position: absolute;
-    top: 20%;
-    left: 30%;
     font-family: 'bona nova';
+    top: 30%;
+    left: 25%;
     font-size: 105px;
     letter-spacing: 3px;
     line-height: 65px;
     margin: 10px 0px;
     text-align: center;
     text-transform: uppercase;
+    margin: auto;
+    font-size: 100px;
+    line-height: 100px;
     color: var(--color-white);
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
 }
 
 .section__sub-title-3 {
     position: absolute;
-    top: 40%;
-    left: 40%;
     font-family: 'montserrat';
     font-size: 12px;
     font-weight: 500;
@@ -125,6 +129,11 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--color-white);
+    top: 50%;
+    left: 25%;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
 }
 
 .section__title-4 {
@@ -170,8 +179,9 @@
 }
 .section__image-button {
     position: absolute;
-    top: 50%;
-    left: 47%;
+    top: 400px;
+    left: 45%;
+    margin: 0 auto;
 }
 
 .logo__image {
@@ -207,7 +217,7 @@
         top: 20%;
         left: 10%;
         font-size: 77px;
-        line-height: 77px;
+        line-height: 100px;
     }
 
     .section__sub-title-3 {
@@ -283,7 +293,7 @@
     }
     .section__image-button {
         position: absolute;
-        top: 79%;
-        left: 30%;
+        top: 460px;
+        left: 130px;
     }
 }

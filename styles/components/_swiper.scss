@@ -1,9 +1,13 @@
 .swiper__img {
-    width: 260px;
-    height: 250px;
+    width: 270px;
+    height: 260px;
     img {
-        width: 260px;
-        height: 250px;
+        width: 280px;
+        height: 270px;
         object-fit: cover;
+        transition: filter 0.5s ease;
+    }
+    &:hover img {
+        filter: brightness(80%);
     }
 }

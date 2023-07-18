@@ -23,7 +23,7 @@
 }
 .slider__button {
     position: absolute;
-    top: 62%;
+    top: 650px;
     left: 47%;
 }
 
@@ -33,17 +33,12 @@
 
 //Laptop and Des
 @media (min-width: 1024px) {
-    .slider__button {
-        position: absolute;
-        top: 62%;
-        left: 47%;
-    }
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
     .slider__button {
         position: absolute;
-        top: 52%;
+        top: 650px;
         left: 42%;
     }
     .carousel-caption {
@@ -76,7 +71,7 @@
     }
     .slider__button {
         position: absolute;
-        top: 36%;
+        top: 320px;
         left: 36%;
     }
     .carousel-caption {

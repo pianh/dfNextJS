@@ -49,7 +49,7 @@ const slides = [
 export const SwiperImage = () => {
     return (
         <Swiper
-            spaceBetween={10}
+            spaceBetween={5}
             slidesPerView={5}
             autoplay={{
                 delay: 3000,

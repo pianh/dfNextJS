@@ -478,7 +478,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                         </div>
                         <div className="container-fluid pt-80">
                             <ImagePoint
-                                title="WE CAN'T WAIT TO SEE"
+                                title="WE CAN'T WAIT"
                                 subTitle="SUNADAY 17, JANUART 2023 AT 17:00"
                                 src="/assets/images/h5-parallax-03.jpg"
                                 alt="SIMONA wedding"
