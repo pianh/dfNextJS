@@ -59,7 +59,7 @@ export const SwiperImage = () => {
         >
             {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                    <div className="swiper__img">
+                    <div className="swiper__img col-12">
                         <Image src={slide.src} alt={slide.title} width={270} height={260} objectFit="cover" />
                     </div>
                 </SwiperSlide>

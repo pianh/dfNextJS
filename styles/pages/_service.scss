@@ -1,0 +1,36 @@
+.service__wrapper {
+    margin-top: 90px;
+    .service__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+.service__img {
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    // margin-right: 100px;
+    position: relative;
+    // overflow: hidden;
+    img {
+        transition: transform 0.4s ease-in-out;
+    }
+    &:hover img {
+        transform: translateY(-5px);
+    }
+}
+
+.service__img-effect {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+.service__img:hover .service__img-effect {
+    display: block;
+    opacity: 1;
+}

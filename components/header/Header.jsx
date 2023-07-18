@@ -126,6 +126,16 @@ export default function Header() {
                                             </Link>
                                         </li>
                                         <li>
+                                            <Link className="has-dropdown" href="/our-services">
+                                                Our Service
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="has-dropdown" href="/pricing-plans">
+                                                Pricing Plans
+                                            </Link>
+                                        </li>
+                                        <li>
                                             <Link className="has-dropdown" href="/make-an-appointment">
                                                 Make an Appointment
                                             </Link>
