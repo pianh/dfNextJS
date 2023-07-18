@@ -12,6 +12,7 @@ import { LoadingScreen } from '@/components/common/LoadingScreen';
 
 export default function App({ Component, pageProps }) {
     const [isLoading, setIsLoading] = useState(true);
+    const check = true; // Add the 'check' variable and set its value
 
     useEffect(() => {
         // Simulate data loading
@@ -26,7 +27,7 @@ export default function App({ Component, pageProps }) {
                 <LoadingScreen />
             ) : (
                 <RootLayout>
-                    <Component {...pageProps} />
+                    <Component {...pageProps} check={check} /> {/* Pass the 'check' variable as a prop */}
                 </RootLayout>
             )}
         </>
