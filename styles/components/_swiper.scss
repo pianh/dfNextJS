@@ -1,6 +1,9 @@
 .swiper__img {
     width: 270px;
     height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
         width: 280px;
         height: 270px;
