@@ -18,7 +18,7 @@ export default function Contact() {
                 <section className="contact__anytime mt-80">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-sm-12">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div className="d-flex justify-content-center flex-column align-items-center">
                                     <div className="-img d-flex justify-content-center align-items-center">
                                         <Image
@@ -36,7 +36,7 @@ export default function Contact() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-12">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div className="contact__form d-flex justify-content-center flex-column">
                                     <div className="row">
                                         <div className="col-12">
@@ -77,8 +77,8 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="container">
-                        <div className="contact__city-wrapper d-flex">
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4">
+                        <div className="contact__city-wrapper">
+                            <div className="col-12 col-sm-12 col-lg-4 col-xl-4">
                                 <div className="contact__city">
                                     <div className="-heading">
                                         <h3 className="section__title-2">MONACO</h3>
@@ -93,7 +93,7 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4">
+                            <div className="col-12 col-sm-12 col-lg-4 col-xl-4">
                                 <div className="contact__city">
                                     <div className="-heading">
                                         <h3 className="section__title-2">FRANCE</h3>
@@ -108,7 +108,7 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4">
+                            <div className="col-12 col-sm-12 col-lg-4 col-xl-4">
                                 <div className="contact__city">
                                     <div className="-heading">
                                         <h3 className="section__title-2">ITALY</h3>

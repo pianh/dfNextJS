@@ -225,9 +225,17 @@
 }
 //Laptop and Des
 @media (min-width: 1024px) {
+    .header__wrapper {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
+    .header__wrapper {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
     .header__toggle-mobile {
         display: block;
     }

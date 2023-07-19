@@ -10,7 +10,7 @@ export default function MakeAnAppointment() {
             <div className="maa__wrapper">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-12 col-sm-6 col-lg-6">
+                        <div className="col-12 col-sm-12 col-lg-6">
                             <div className="maa-left">
                                 <div className="-img">
                                     <Image
@@ -23,7 +23,7 @@ export default function MakeAnAppointment() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6 col-lg-6">
+                        <div className="col-12 col-sm-12 col-lg-6">
                             <div className="maa-right d-flex flex-column text-center align-items-center">
                                 <ImageHighlight
                                     src="/assets/images/bird.png"
@@ -31,7 +31,7 @@ export default function MakeAnAppointment() {
                                     height="160"
                                     alt="image bird"
                                 />
-                                <div className="maa__heading">
+                                <div className="maa__heading animate__animated animate__bounce animate__delay-0.5s">
                                     <Heading title="READY TO REQUEAST AN APPOINTMENT?" subTitle="WHERE IT ALL BEGINS" />
                                 </div>
                                 <div className="maa__form row">

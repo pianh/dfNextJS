@@ -13,7 +13,7 @@ export default function rsvp() {
                         <HeaderBottom src="/assets/images/bcgr-video.jpg" text="RSVP PAGE" width={2000} height={850} />
                     </div>
                 </section>
-                <section className="rsvp__content mt-80">
+                <section className="rsvp__content">
                     <Heading
                         title="WE CAN'T WAIT TO SEE YOU!"
                         subTitle="PLEASE RSVP BY NOVEMEBER THE 14TH, LET US KNOW YOU'RE COMING!"
@@ -63,7 +63,7 @@ export default function rsvp() {
                                 <div className="col-12 col-sm-12 col-lg-12">
                                     <textarea placeholder="Notes..." />
                                 </div>
-                                <div className="col-12">
+                                <div className="col-12 col-sm-12 col-lg-12">
                                     <Button className="section__button rsvp__button" title="CONTACT US" />
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ export default function rsvp() {
                     </div>
                 </section>
                 <section className="rsvp__slider">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="rsvp__img-wrapper d-flex">
                             <SwiperImage />
                         </div>

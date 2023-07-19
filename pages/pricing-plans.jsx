@@ -9,7 +9,7 @@ export default function PricingPlans() {
         <main>
             <div className="pricing__wrapper">
                 <section className="header__pricing">
-                    <div>
+                    <div className="container-fluid">
                         <HeaderBottom
                             src="/assets/images/title-bcgr.jpg"
                             text="PRICING PLANS"
@@ -22,8 +22,8 @@ export default function PricingPlans() {
                     <Heading title="RECOMENDED PRODUCTS" subTitle="THEME HENDRERIT ID, LOREM" />
                     <div className="pricing-product text-center">
                         <div className="container">
-                            <div className="row">
-                                <div className="col-12 col-sm-4 col-lg-4 pricing-item">
+                            <div className="row d-flex justify-content-center">
+                                <div className="col-12 col-sm-12 col-lg-4 pricing-item">
                                     <h4>Standard</h4>
                                     <h5>per guest</h5>
                                     <div>
@@ -36,7 +36,7 @@ export default function PricingPlans() {
                                     </p>
                                     <div className="pricing-pur">PURCHASE</div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-4 pricing-item pricing-bg">
+                                <div className="col-12 col-sm-12 col-lg-4 pricing-item pricing-bg">
                                     <h4>EXCLUSIVE</h4>
                                     <h5>per guest</h5>
                                     <div>
@@ -49,7 +49,7 @@ export default function PricingPlans() {
                                     </p>
                                     <div className="pricing-pur">PURCHASE</div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-4 pricing-item">
+                                <div className="col-12 col-sm-12 col-lg-4 pricing-item">
                                     <h4>PREMIUM</h4>
                                     <h5>per guest</h5>
                                     <div>
@@ -69,7 +69,7 @@ export default function PricingPlans() {
                 <section className="pricing__icon">
                     <div className="container">
                         <div className="row ">
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img.png"
@@ -80,7 +80,7 @@ export default function PricingPlans() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img2.png"
@@ -91,7 +91,7 @@ export default function PricingPlans() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img3.png"
@@ -102,7 +102,7 @@ export default function PricingPlans() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img4.png"
@@ -113,7 +113,7 @@ export default function PricingPlans() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img5.png"
@@ -124,7 +124,7 @@ export default function PricingPlans() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-2 col-lg-2 d-flex justify-content-center">
+                            <div className="col-12 col-sm-6 col-lg-2 d-flex justify-content-center">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/pricing/sidearea-img7.png"
@@ -139,7 +139,7 @@ export default function PricingPlans() {
                     </div>
                 </section>
                 <section className="pricing__slider">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="pricing__img-wrapper d-flex">
                             <SwiperImage />
                         </div>

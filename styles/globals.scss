@@ -1,7 +1,7 @@
-@import './abstracts/abstracts';
 @import './base/base';
-@import './components/components'; //Page
-@import './pages/pages'; //Page
+@import './abstracts/abstracts';
+@import './pages/pages';
+@import './components/components';
 // @tailwind base;
 // @tailwind components;
 // @tailwind utilities;

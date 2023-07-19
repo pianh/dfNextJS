@@ -1,3 +1,8 @@
+.header__pricing {
+    img {
+        object-fit: cover;
+    }
+}
 .pricing__wrapper {
     margin-top: 90px;
     .pricing__content {
@@ -93,12 +98,44 @@
         padding: 100px 0;
         .pricing__img-wrapper {
             display: flex;
-            margin: 0 40px 0 120px;
         }
     }
 }
 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__pricing {
+        .header__bottom {
+            .-text {
+                text-align: center;
+                font-size: 50px;
+            }
+        }
+    }
+    .pricing-product {
+        margin-top: 70px;
+    }
+    .pricing__wrapper .pricing-item {
+        margin-top: 0px;
+        padding: 150px 160px;
+    }
+}
+
 @media (max-width: 740px) {
-    .pricing__icon {
+    .header__pricing {
+        .header__bottom {
+            .-text {
+                text-align: center;
+                font-size: 70px;
+            }
+        }
+    }
+    .pricing-product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricing__wrapper .pricing-item {
+        max-width: 90%;
+        margin-top: 0px;
     }
 }

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function HeaderBottom(props) {
     return (
-        <section className="header__bottom">
+        <section className="header__bottom container-fluid">
             <div className="_img">
                 <Image
                     src={props.src}

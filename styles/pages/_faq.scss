@@ -1,3 +1,9 @@
+.header__faq {
+    img {
+        object-fit: cover;
+    }
+}
+
 .faq__wrapper {
     margin-top: 90px;
 }
@@ -6,6 +12,9 @@
     .-img {
         width: 600px;
         height: 600px;
+        img {
+            object-fit: cover;
+        }
     }
 }
 
@@ -21,6 +30,7 @@
         span {
             margin-right: 10px;
             font-size: 26px;
+            font-family: 'Bona Nova';
         }
         i {
             margin-left: auto;
@@ -30,27 +40,45 @@
 
     .-des {
         padding: 25px 30px;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 28px;
         border: 1px solid #e5dacf;
         opacity: 0;
         animation: fade-in 0.5s forwards;
+        font-family: 'Arimo';
     }
 }
 
 .faq__slider {
     margin-top: 80px;
-    padding: 100px 60px 100px 60px;
+    padding: 100px 0px 100px 0px;
     border-top: 1px solid #e5dacf;
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
+@media (min-width: 1024px) {
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .faq__content .-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+    .faq__box {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 740px) {
+    .faq__content {
+        .-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
     }
 }

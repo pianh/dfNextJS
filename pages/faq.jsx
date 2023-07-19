@@ -34,14 +34,14 @@ export default function Faq() {
         <main>
             <div className="faq__wrapper">
                 <section className="header__faq">
-                    <div>
-                        <HeaderBottom src="/assets/images/faq-title.jpg" text="FAQ" width={2000} height={545} />
+                    <div className="container-fluid">
+                        <HeaderBottom src="/assets/images/faq-title.jpg" text="FAQ" width={3000} height={545} />
                     </div>
                 </section>
                 <section className="faq__content pt-120">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/faq/faq-h1.png"
@@ -52,7 +52,7 @@ export default function Faq() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 ">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
                                 <div>
                                     <div className="faq__box">
                                         <div className="-title" onClick={toggleDes1}>
@@ -144,7 +144,7 @@ export default function Faq() {
                     </div>
                 </section>
                 <section className="faq__slider">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="faq__img-wrapper d-flex">
                             <SwiperImage />
                         </div>

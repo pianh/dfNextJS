@@ -14,6 +14,7 @@ import ImagePoint from '@/components/common/ImagePoint';
 import ImageHighlight from '@/components/common/ImageHighlight';
 import Product from '@/components/common/Product';
 import { useEffect, useState } from 'react';
+import Scroll from '@/components/common/Scroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -59,6 +60,20 @@ export default function Home({ resultsOne, resultsTwo }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
+                <Link href="#">
+                    <div className="scroll__top">
+                        <div className="-img">
+                            <Image
+                                className=""
+                                src="/assets/images/top.png"
+                                width={100}
+                                height={100}
+                                alt="scroll top"
+                                objectFit="cover"
+                            />
+                        </div>
+                    </div>
+                </Link>
                 <div className="home__wrapper">
                     <section className=" slider__area pl-60 pr-60">
                         <div className="container-fluid">
@@ -222,32 +237,14 @@ export default function Home({ resultsOne, resultsTwo }) {
                         </div>
                     </section>
                     <section className="scroll__area pt-80">
-                        <div className="container-fluid d-flex scroll-group">
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                ENDLESS INSPIRATIONS
-                            </div>
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                AGNIFICENT WEDDING
-                            </div>
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                BEAUTIFUL IDEAS
-                            </div>
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                ENDLESS INSPIRATIONS{' '}
-                            </div>
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                AGNIFICENT WEDDING
-                            </div>
-                            <div className="scroll-text">
-                                <i className="fa-solid fa-diamond"></i>
-                                BEAUTIFUL IDEAS
-                            </div>
-                        </div>
+                        <Scroll
+                            text1="ENDLESS INSPIRATIONS"
+                            text2=" AGNIFICENT WEDDING"
+                            text3="BEAUTIFUL IDEAS"
+                            text4="ENDLESS INSPIRATIONS{' '}"
+                            text5="AGNIFICENT WEDDING"
+                            text6="BEAUTIFUL IDEAS"
+                        />
                     </section>
                     <section className="timeline__area pt-80">
                         <div className="container">

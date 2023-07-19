@@ -4,6 +4,9 @@
         width: 100%;
         height: auto;
         filter: blur(2px);
+        img {
+            object-fit: cover;
+        }
     }
     .-text {
         position: absolute;
@@ -12,5 +15,25 @@
         transform: translate(-50%, -50%);
         font-size: 65px;
         color: var(--color-white);
+        font-family: 'Bona Nova';
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+@media (max-width: 740px) {
+    .header__bottom {
+        position: relative;
+        &_img {
+            width: 100%;
+            height: auto;
+            filter: blur(2px);
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
     }
 }

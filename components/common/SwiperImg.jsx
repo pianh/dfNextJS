@@ -1,11 +1,12 @@
-import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
+// import Swiper core and required modules
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-SwiperCore.use([Autoplay]);
+// Import Swiper styles
+import 'swiper/css';
+import Image from 'next/image';
 
 const slides = [
     {
@@ -49,17 +50,14 @@ const slides = [
 export const SwiperImage = () => {
     return (
         <Swiper
-            spaceBetween={5}
+            spaceBetween={10}
             slidesPerView={5}
-            autoplay={{
-                delay: 3000,
-            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
             {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                    <div className="swiper__img col-12">
+                    <div className="swiper__img">
                         <Image src={slide.src} alt={slide.title} width={270} height={260} objectFit="cover" />
                     </div>
                 </SwiperSlide>
