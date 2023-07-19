@@ -1,3 +1,8 @@
+.header__service {
+    img {
+        object-fit: cover;
+    }
+}
 .service__wrapper {
     margin-top: 90px;
     .service__icon {
@@ -7,17 +12,25 @@
         margin-top: 40px;
     }
 }
+.service__welcome {
+    margin-top: 35px;
+    .section__title {
+        padding: 0 220px;
+        line-height: 58px;
+    }
+}
 .service__img {
-    max-height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     margin-top: 20px;
-    // margin-right: 100px;
     position: relative;
-    // overflow: hidden;
+    max-height: 450px;
+    max-width: 450px;
     img {
         transition: transform 0.4s ease-in-out;
+        object-fit: cover;
     }
     &:hover img {
         transform: translateY(-5px);
@@ -26,11 +39,224 @@
 
 .service__img-effect {
     position: absolute;
-    top: 10px;
+    top: -50px;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 .service__img:hover .service__img-effect {
     display: block;
     opacity: 1;
+}
+
+.service__heading {
+    .section__title-4 {
+        margin-top: 40px;
+        font-family: 'Bona Nova';
+        font-size: 27px;
+        letter-spacing: 0.54px;
+        line-height: 27px;
+    }
+    .section__des-4 {
+        line-height: 28px;
+        font-size: 17px;
+    }
+}
+
+.service__introduce {
+    margin-top: 20px;
+    .service-gift {
+        border: 1px solid var(--color-header-border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.service__infinite {
+    background-color: #f7f7f0;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    .section__sub__title {
+        margin-bottom: 50px;
+    }
+}
+.service__slider-wrapper {
+    margin-top: -200px;
+}
+
+.service__number {
+    margin-top: 100px;
+    border-top: 1px solid var(--color-header-border);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    text-align: center;
+    .-item {
+        span {
+            color: #e57339;
+            font-size: 80px;
+            line-height: 90px;
+            font-style: italic;
+            font-weight: 300;
+            align-items: center;
+            i {
+                color: #f2cab6;
+                font-size: 13px;
+                line-height: 28px;
+                margin: 0 10px;
+            }
+        }
+        h4 {
+            color: #262626;
+            font-family: 'Arimo';
+            line-height: 28px;
+            font-size: 18px;
+            margin-top: 12px;
+            font-weight: 300;
+        }
+    }
+}
+
+.service__married {
+    .section__des {
+        padding: 0 250px;
+    }
+}
+
+.service__married-img-wrapper {
+    margin-top: 30px;
+    .service__married-img {
+        width: 435;
+        height: 450;
+    }
+}
+
+.service__married-img {
+    position: relative;
+}
+
+.service__married-img-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    border: 2px solid #e5dacf;
+    transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease-out;
+}
+
+.service__married-img:hover .service__married-img-effect {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 1;
+    border: 1px solid #e5dacf;
+    transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease-out;
+}
+
+.service__heading {
+    margin-top: 30px;
+    .service__title {
+        color: #0d0d0d;
+        display: inline;
+        font-family: 'Bona Nova';
+        font-size: 33px;
+        letter-spacing: 0.68px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .service__sub-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        cursor: pointer;
+        p {
+            color: #e57339;
+            display: inline-flex;
+            flex-wrap: nowrap;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2.1px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            &:hover {
+                opacity: 60%;
+            }
+        }
+        i {
+            color: #e5dacf;
+            display: inline-flex;
+            flex-wrap: wrap;
+            font-size: 6px;
+            letter-spacing: 2.1px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 10px;
+            &:hover {
+                opacity: 60%;
+            }
+        }
+    }
+}
+
+.service-gift img {
+    opacity: 70%;
+    width: 220px;
+    height: 220px;
+
+    &:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+
+.service__slider {
+    margin-top: 150px;
+    padding: 80px 0;
+    border-top: 1px solid var(--color-header-border);
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__service .header__bottom .-text {
+        text-align: center;
+        font-size: 70px;
+        display: block;
+        white-space: nowrap;
+    }
+    .service__welcome {
+        .section__title {
+            padding: 0;
+        }
+        .section__sub__title {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+    .service__img-wrapper {
+        padding-top: 0;
+    }
+    .service__img {
+        max-width: 100%;
+    }
 }

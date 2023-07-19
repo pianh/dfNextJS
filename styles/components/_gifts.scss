@@ -1,0 +1,11 @@
+.gift-item {
+    max-width: 400px;
+    max-height: 400px;
+    border: 1px solid var(--color-header-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        object-fit: cover;
+    }
+}

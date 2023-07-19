@@ -7,27 +7,27 @@ export default function Scroll(props) {
                 <div className="container-fluid d-flex scroll-group">
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        ENDLESS INSPIRATIONS {props.text1}
+                        {props.text1}
                     </div>
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        AGNIFICENT WEDDING {props.text2}
+                        {props.text2}
                     </div>
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        BEAUTIFUL IDEAS {props.text2}
+                        {props.text2}
                     </div>
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        ENDLESS INSPIRATIONS {props.text4}
+                        {props.text4}
                     </div>
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        AGNIFICENT WEDDING {props.text5}
+                        {props.text5}
                     </div>
                     <div className="scroll-text">
                         <i className="fa-solid fa-diamond"></i>
-                        BEAUTIFUL IDEAS {props.text6}
+                        {props.text6}
                     </div>
                 </div>
             </section>

@@ -111,7 +111,7 @@ export default function Header() {
                                     </Link>
                                     <ul className="submenu">
                                         <li>
-                                            <Link className="has-dropdown" href="/">
+                                            <Link className="has-dropdown" href="/about">
                                                 About US
                                             </Link>
                                         </li>

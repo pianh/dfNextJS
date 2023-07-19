@@ -1,12 +1,11 @@
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Swiper core and required modules
-
+import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// Import Swiper styles
-import 'swiper/css';
-import Image from 'next/image';
+
+SwiperCore.use([Autoplay]);
 
 const slides = [
     {
@@ -50,8 +49,11 @@ const slides = [
 export const SwiperImage = () => {
     return (
         <Swiper
-            spaceBetween={10}
+            spaceBetween={5}
             slidesPerView={5}
+            autoplay={{
+                delay: 3000,
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
