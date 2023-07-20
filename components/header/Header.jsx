@@ -110,7 +110,7 @@ export default function Header() {
                                         Pages
                                     </Link>
                                     <ul className="submenu">
-                                        <li>
+                                        {/* <li>
                                             <Link className="has-dropdown" href="/about">
                                                 About US
                                             </Link>
@@ -119,10 +119,10 @@ export default function Header() {
                                             <Link className="has-dropdown" href="/">
                                                 Our Story
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Bridesmaids & Groomsmen
+                                            <Link className="has-dropdown" href="/gift-registry">
+                                                Gift registry
                                             </Link>
                                         </li>
                                         <li>
@@ -245,7 +245,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="" href="/">
+                                    <Link className="" href="/shop">
                                         Shop
                                     </Link>
                                 </li>

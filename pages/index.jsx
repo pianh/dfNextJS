@@ -60,7 +60,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <Link href="#">
+                {/* <Link href="#">
                     <div className="scroll__top">
                         <div className="-img">
                             <Image
@@ -73,7 +73,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                             />
                         </div>
                     </div>
-                </Link>
+                </Link> */}
                 <div className="home__wrapper">
                     <section className=" slider__area pl-60 pr-60">
                         <div className="container-fluid">

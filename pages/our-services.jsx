@@ -35,7 +35,7 @@ export default function OurServices() {
                         <div className="pt-60 service__img-wrapper">
                             <div className="row justify-content-between">
                                 <div className="col-12 col-sm-12 col-lg-4">
-                                    <div>
+                                    <div className="service__img-item">
                                         <div className="service__img">
                                             <Image
                                                 src="/assets/images/services/h1-img-2.png"
@@ -62,7 +62,7 @@ export default function OurServices() {
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-12 col-lg-4">
-                                    <div>
+                                    <div className="service__img-item">
                                         <div className="service__img">
                                             <Image
                                                 src="/assets/images/services/h1-img-3.png"
@@ -89,7 +89,7 @@ export default function OurServices() {
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-12 col-lg-4">
-                                    <div>
+                                    <div className="service__img-item">
                                         <div className="service__img">
                                             <Image
                                                 src="/assets/images/services/h1-img-4.png"
@@ -133,45 +133,47 @@ export default function OurServices() {
                         </div>
                     </div>
                     <div className="service__number">
-                        <div className="container d-flex">
-                            <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="-item">
-                                    <span className="d-flex justify-content-center">
-                                        <i className="fa-solid fa-diamond"></i>
-                                        3618
-                                        <i className="fa-solid fa-diamond"></i>
-                                    </span>
-                                    <h4>Ceremonies</h4>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="-item">
+                                        <span className="d-flex justify-content-center">
+                                            <i className="fa-solid fa-diamond"></i>
+                                            3618
+                                            <i className="fa-solid fa-diamond"></i>
+                                        </span>
+                                        <h4>Ceremonies</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="-item">
-                                    <span className="d-flex justify-content-center">
-                                        <i className="fa-solid fa-diamond"></i>
-                                        1509
-                                        <i className="fa-solid fa-diamond"></i>
-                                    </span>
-                                    <h4>Ceremonies</h4>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="-item">
+                                        <span className="d-flex justify-content-center">
+                                            <i className="fa-solid fa-diamond"></i>
+                                            1509
+                                            <i className="fa-solid fa-diamond"></i>
+                                        </span>
+                                        <h4>Ceremonies</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="-item">
-                                    <span className="d-flex justify-content-center">
-                                        <i className="fa-solid fa-diamond"></i>
-                                        1624
-                                        <i className="fa-solid fa-diamond"></i>
-                                    </span>
-                                    <h4>Ceremonies</h4>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="-item">
+                                        <span className="d-flex justify-content-center">
+                                            <i className="fa-solid fa-diamond"></i>
+                                            1624
+                                            <i className="fa-solid fa-diamond"></i>
+                                        </span>
+                                        <h4>Ceremonies</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="-item">
-                                    <span className="d-flex justify-content-center">
-                                        <i className="fa-solid fa-diamond"></i>
-                                        3185
-                                        <i className="fa-solid fa-diamond"></i>
-                                    </span>
-                                    <h4>Ceremonies</h4>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="-item">
+                                        <span className="d-flex justify-content-center">
+                                            <i className="fa-solid fa-diamond"></i>
+                                            3185
+                                            <i className="fa-solid fa-diamond"></i>
+                                        </span>
+                                        <h4>Ceremonies</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -275,71 +277,73 @@ export default function OurServices() {
                             </div>
                         </div>
                     </div>
-                    <div className="service__introduce d-flex pt-120">
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/hover-client-new.png"
-                                    alt="introduce image"
-                                    width={170}
-                                    height={170}
-                                    objectFit="cover"
-                                />
+                    <div className="service__introduce pt-120">
+                        <div className="row">
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/hover-client-new.png"
+                                        alt="introduce image"
+                                        width={170}
+                                        height={170}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/h3-client-2.png"
-                                    alt="introduce image"
-                                    width={170}
-                                    height={170}
-                                    objectFit="cover"
-                                />
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/h3-client-2.png"
+                                        alt="introduce image"
+                                        width={170}
+                                        height={170}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/h3-client-hover-3.png"
-                                    alt="introduce image"
-                                    width={170}
-                                    height={170}
-                                    objectFit="cover"
-                                />
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/h3-client-hover-3.png"
+                                        alt="introduce image"
+                                        width={170}
+                                        height={170}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/h3-client-hover-04.png"
-                                    alt="introduce image"
-                                    width={170}
-                                    height={170}
-                                    objectFit="cover"
-                                />
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/h3-client-hover-04.png"
+                                        alt="introduce image"
+                                        width={170}
+                                        height={170}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/h3-client-hover-05.png"
-                                    alt="introduce image"
-                                    width={170}
-                                    height={170}
-                                    objectFit="cover"
-                                />
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/h3-client-hover-05.png"
+                                        alt="introduce image"
+                                        width={170}
+                                        height={170}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-3 col-lg-2">
-                            <div className="service-gift">
-                                <Image
-                                    src="/assets/images/h3-client-hover-6.png"
-                                    alt="introduce image"
-                                    width={250}
-                                    height={250}
-                                    objectFit="cover"
-                                />
+                            <div className="col-12 col-sm-6 col-lg-2">
+                                <div className="service-gift">
+                                    <Image
+                                        src="/assets/images/h3-client-hover-6.png"
+                                        alt="introduce image"
+                                        width={250}
+                                        height={250}
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

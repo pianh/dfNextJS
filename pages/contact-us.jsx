@@ -33,6 +33,7 @@ export default function Contact() {
                                         title="CONTACT US ANYTIME"
                                         subTitle="WE WOULD LIKE TO HEAR FROM YOU"
                                         desc="Lorem ipsum dolor sti amet se dcredula non seculus est voluspa fin et dol"
+                                        className="animate__animated animate__backInDown animate__delay-0.5s"
                                     />
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ function ControlledCarousel() {
                     <div className="slider__img">
                         <Image
                             className="d-block w-100"
-                            src="/assets/images/wedding1.jpg"
+                            src="/assets/images/wedding2.jpg"
                             alt="First slide"
                             width={1000}
                             height={700}
@@ -25,15 +25,17 @@ function ControlledCarousel() {
                         />
                     </div>
                     <Carousel.Caption>
-                        <h3>SIMONA & NOEL</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="animate__animated animate__fadeInUp animate__delay-1s">SIMONA & NOEL</h3>
+                        <p className="animate__animated animate__backInDown animate__delay-2s">
+                            Nulla vitae elit libero, a pharetra augue mollis interdum.
+                        </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="slider__img">
                         <Image
                             className="d-block w-100"
-                            src="/assets/images/wedding2.jpg"
+                            src="/assets/images/wedding1.jpg"
                             alt="Second slide"
                             width={1000}
                             height={700}
@@ -42,8 +44,10 @@ function ControlledCarousel() {
                     </div>
 
                     <Carousel.Caption>
-                        <h3>MARTHA & JOEY</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 className="animate__animated animate__fadeInUp animate__delay-1s">MARTHA & JOEY</h3>
+                        <p className="animate__animated animate__backInDown animate__delay-2s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -59,8 +63,10 @@ function ControlledCarousel() {
                     </div>
 
                     <Carousel.Caption>
-                        <h3>SIMONA & NOEL</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3 className="animate__animated animate__fadeInUp animate__delay-1s">SIMONA & NOEL</h3>
+                        <p className="animate__animated animate__backInDown animate__delay-2s">
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

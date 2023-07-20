@@ -21,7 +21,7 @@ function GetInTouch() {
                                     />
                                 </div>
                                 <Heading title="GET IN TOUCH" subTitle="THEME HENDRERIT ID, LOREM" />
-                                <div className="get__contact">
+                                <div className="get__contact animate__animated animate__backInDown animate__delay-0.5s">
                                     <h1>CONTACT US</h1>
                                     <div className="text-center d-flex flex-column">
                                         <p className="footer-address section__des-4">

@@ -19,7 +19,11 @@ export default function PricingPlans() {
                     </div>
                 </section>
                 <section className="pricing__content">
-                    <Heading title="RECOMENDED PRODUCTS" subTitle="THEME HENDRERIT ID, LOREM" />
+                    <Heading
+                        title="RECOMENDED PRODUCTS"
+                        subTitle="THEME HENDRERIT ID, LOREM"
+                        className="animate__animated animate__zoomInDown animate__delay-0.5s"
+                    />
                     <div className="pricing-product text-center">
                         <div className="container">
                             <div className="row d-flex justify-content-center">

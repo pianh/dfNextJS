@@ -54,7 +54,7 @@ export default function Faq() {
                             </div>
                             <div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
                                 <div>
-                                    <div className="faq__box">
+                                    <div className="faq__box animate__animated animate__backInDown animate__delay-0.5s">
                                         <div className="-title" onClick={toggleDes1}>
                                             <span>HOW TO GET THERE</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>

@@ -1,4 +1,5 @@
 import Button from '@/components/common/Button';
+import Link from 'next/link';
 import React from 'react';
 
 export default function NotFoundPage() {
@@ -12,7 +13,9 @@ export default function NotFoundPage() {
                         Please try searching for some other page, or return to the website&apos;s homepage to find what
                         you&apos;re looking for.
                     </h4>
-                    <Button className="section__button not-found__button" title="Back to home" />
+                    <Link href="/">
+                        <Button className="section__button not-found__button" title="Back to home" />
+                    </Link>
                 </div>
             </div>
         </main>

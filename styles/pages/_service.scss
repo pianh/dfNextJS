@@ -1,4 +1,5 @@
 .header__service {
+    text-align: center;
     img {
         object-fit: cover;
     }
@@ -219,6 +220,14 @@
         }
     }
 }
+.service__introduce {
+    .row {
+        margin: 0;
+        .col-lg-2 {
+            padding: 0;
+        }
+    }
+}
 
 .service-gift img {
     opacity: 70%;
@@ -256,7 +265,96 @@
     .service__img-wrapper {
         padding-top: 0;
     }
+    .service__img-item {
+        margin-top: 50px;
+        .section__des-4 {
+            padding: 0 150px;
+            margin-top: 20px;
+        }
+    }
     .service__img {
         max-width: 100%;
+    }
+    .service__number {
+        margin-top: 100px;
+        padding-top: 30px;
+        .-item {
+            margin-top: 40px;
+        }
+    }
+    .service__married {
+        padding-top: 100px;
+        .section__des {
+            padding: 0 100px;
+        }
+    }
+    .service__married-img-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .service__married-img {
+            margin-top: 30px;
+        }
+    }
+    .service__introduce {
+        display: flex;
+        // flex-direction: column;
+    }
+}
+
+@media (max-width: 740px) {
+    .service__img-wrapper {
+        padding-top: 0;
+    }
+    .service__welcome .section__title {
+        padding: 0 20px;
+        line-height: 58px;
+    }
+    .service__img-item {
+        margin-top: 50px;
+    }
+    .service__number {
+        .-item {
+            margin-top: 40px;
+            span {
+                i {
+                    font-size: 8px;
+                }
+            }
+            h4 {
+                font-size: 17px;
+            }
+        }
+    }
+    .service__married {
+        .section__title {
+            font-size: 49px;
+        }
+        .section__des {
+            padding: 0 20px;
+        }
+        .service__married-img-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .service__married-img {
+            width: 355px;
+            height: 360px;
+            img {
+                width: 355px;
+                height: 360px;
+                object-fit: cover;
+            }
+        }
+        .service__sub-title {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .service__introduce {
+        padding: 50px 10px;
     }
 }

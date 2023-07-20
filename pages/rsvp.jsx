@@ -17,6 +17,7 @@ export default function rsvp() {
                     <Heading
                         title="WE CAN'T WAIT TO SEE YOU!"
                         subTitle="PLEASE RSVP BY NOVEMEBER THE 14TH, LET US KNOW YOU'RE COMING!"
+                        className="animate__animated animate__lightSpeedInRight animate__delay-0.5s"
                     />
                     <div className="rsvp__form">
                         <div className="container">
