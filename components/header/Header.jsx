@@ -245,7 +245,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="" href="/shop">
+                                    <Link className="" href="/">
                                         Shop
                                     </Link>
                                 </li>
