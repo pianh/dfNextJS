@@ -349,3 +349,114 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .blog__wrapper {
+        margin-top: 120px;
+        padding: 0 60px;
+    }
+    .blog__content {
+        margin-top: 70px;
+    }
+
+    .blog__right {
+        .blog__seach {
+            position: relative;
+
+            input {
+                width: 660px;
+                height: 60px;
+                padding: 0 30px;
+                font-size: 15px;
+                border: 1px solid var(--color-header-border);
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+            svg {
+                position: absolute;
+                font-size: 28px;
+                top: 50%;
+                // left: 50%;
+                right: 10px;
+                margin: auto 0;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .blog-user {
+        width: 400px;
+        height: 400px;
+        img {
+        }
+    }
+    .blog__posts,
+    .blog__category,
+    .blog__share,
+    .blog__tags {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .blog__category .blog__category-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 400px;
+            height: 400px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .blog__instagram-item {
+        .-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog__wrapper {
+        margin-top: 120px;
+        padding: 0 20px;
+    }
+    .blog__happy {
+        img {
+            height: 200px;
+        }
+    }
+    .blog__intro {
+        padding: 100px 20px;
+    }
+    .blog__ending .-img {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+    .blog__banner {
+        margin-bottom: 100px;
+    }
+    .blog__instagram-item {
+        align-items: center;
+    }
+    .blog__instagram .blog__instagram-item .-img {
+        margin-top: 20px;
+        width: 100%;
+        height: 120px;
+    }
+    .blog__instagram .blog__instagram-item .-img img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+    .blog__archive {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+    .blog__slider {
+        margin-bottom: 50px;
+    }
+}

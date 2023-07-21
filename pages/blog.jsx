@@ -197,7 +197,7 @@ export default function Blog() {
                                 <span className="blog__instagram-heading">INSTAGRAM:</span>
                                 <div className="blog__instagram-item">
                                     <div className="row">
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-1.jpg"
@@ -208,7 +208,7 @@ export default function Blog() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-2.jpg"
@@ -219,7 +219,7 @@ export default function Blog() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-3.jpg"
@@ -230,7 +230,7 @@ export default function Blog() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-4.jpg"
@@ -241,7 +241,7 @@ export default function Blog() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-5.jpg"
@@ -252,7 +252,7 @@ export default function Blog() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-4 col-sm-6">
+                                        <div className="col-6 col-lg-4 col-sm-6">
                                             <div className="-img">
                                                 <Image
                                                     src="/assets/images/blog/ig-sidebar-blog-2.jpg"
@@ -282,7 +282,7 @@ export default function Blog() {
                 </div>
             </section>
             <section className="blog__slider">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="blog__img-wrapper d-flex">
                         <SwiperImage />
                     </div>
