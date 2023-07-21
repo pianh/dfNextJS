@@ -47,10 +47,22 @@ const slides = [
 ];
 
 export const SwiperImage = () => {
+    const getVisibleSlides = () => {
+        if (window.matchMedia('(max-width: 600px)').matches) {
+            return 1; // Mobile: 1 slide
+        } else if (window.matchMedia('(max-width: 992px)').matches) {
+            return 3; // Tablet: 3 slides
+        } else {
+            return 5; // PC: 5 slides
+        }
+    };
+
+    const visibleSlides = getVisibleSlides();
+
     return (
         <Swiper
             spaceBetween={5}
-            slidesPerView={5}
+            slidesPerView={visibleSlides}
             autoplay={{
                 delay: 3000,
             }}

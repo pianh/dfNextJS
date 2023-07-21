@@ -417,4 +417,15 @@
             }
         }
     }
+    .header__main .submenu li {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__main .submenu li div {
+        display: flex;
+        width: 100%;
+    }
+    .header__main .submenu li:hover .sub-detail {
+        z-index: 2;
+    }
 }

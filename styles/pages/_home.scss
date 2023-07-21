@@ -7,8 +7,11 @@
 }
 
 .story__image {
-    width: 600px;
-    height: 640px;
+    width: 638px;
+    height: 693px;
+    img {
+        object-fit: cover;
+    }
 }
 
 .story-week,
@@ -58,7 +61,7 @@
 //scroll__area
 .scroll-group {
     height: 60px;
-    background-color: #c5ccb8;
+    background-color: #64724d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,10 +140,16 @@
 
 .brides__grooms-effect {
     position: absolute;
-    top: 10%;
+    top: 0;
+    left: 6%;
     // display: none;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    width: 450px;
+    height: 350px;
+    img {
+        object-fit: cover;
+    }
 }
 .brides__grooms-image:hover .brides__grooms-effect {
     display: block;
@@ -155,6 +164,13 @@
     }
     &:hover img {
         opacity: 1;
+    }
+}
+.partners-section {
+    .partners__product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -200,8 +216,6 @@
         display: flex;
         justify-content: center;
         img {
-            width: 700px;
-            height: auto;
             object-fit: cover;
         }
     }

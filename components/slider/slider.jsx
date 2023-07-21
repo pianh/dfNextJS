@@ -22,6 +22,7 @@ function ControlledCarousel() {
                             width={1000}
                             height={700}
                             objectFit="cover"
+                            loading="eager"
                         />
                     </div>
                     <Carousel.Caption>
@@ -40,6 +41,7 @@ function ControlledCarousel() {
                             width={1000}
                             height={700}
                             objectFit="cover"
+                            loading="eager"
                         />
                     </div>
 
@@ -59,6 +61,7 @@ function ControlledCarousel() {
                             width={1000}
                             height={700}
                             objectFit="cover"
+                            loading="eager"
                         />
                     </div>
 

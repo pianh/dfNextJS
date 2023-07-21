@@ -1,15 +1,22 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 export default function Product() {
     return (
-        <div>
-            <div className="row pt-60">
+        <div className="container">
+            <div className="row">
                 <div className="col-12 col-sm-6 col-lg-3">
                     <div className="product__wrapper">
                         <div className="product__img">
                             <Link href="">
-                                <img src="/assets/images/partners/shop-15-img-1.jpg" alt="" />
+                                <Image
+                                    src="/assets/images/partners/shop-15-img-1.jpg"
+                                    alt="product"
+                                    width={310}
+                                    height={430}
+                                    objectFit="cover"
+                                />
                             </Link>
                             <div className="product__img-effect"></div>
                         </div>
@@ -25,7 +32,13 @@ export default function Product() {
                     <div className="product__wrapper">
                         <div className="product__img">
                             <Link href="">
-                                <img src="/assets/images/partners/shop-18-img-1.jpg" alt="" />
+                                <Image
+                                    src="/assets/images/partners/shop-18-img-1.jpg"
+                                    alt="product"
+                                    width={310}
+                                    height={430}
+                                    objectFit="cover"
+                                />
                             </Link>
                             <div className="product__img-effect"></div>
                         </div>
@@ -41,7 +54,13 @@ export default function Product() {
                     <div className="product__wrapper">
                         <div className="product__img">
                             <Link href="">
-                                <img src="/assets/images/partners/shop-24-img-01.jpg" alt="" />
+                                <Image
+                                    src="/assets/images/partners/shop-24-img-01.jpg"
+                                    alt="product"
+                                    width={310}
+                                    height={430}
+                                    objectFit="cover"
+                                />
                             </Link>
                             <div className="product__img-effect"></div>
                         </div>
@@ -57,7 +76,13 @@ export default function Product() {
                     <div className="product__wrapper">
                         <div className="product__img">
                             <Link href="">
-                                <img src="/assets/images/partners/shop-25-img-01.jpg" alt="" />
+                                <Image
+                                    src="/assets/images/partners/shop-25-img-01.jpg"
+                                    alt="product"
+                                    width={310}
+                                    height={430}
+                                    objectFit="cover"
+                                />
                             </Link>
                             <div className="product__img-effect"></div>
                         </div>
