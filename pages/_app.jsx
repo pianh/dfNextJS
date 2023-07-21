@@ -9,25 +9,26 @@ import 'animate.css';
 
 import RootLayout from '@/components/layout/layout';
 import { LoadingScreen } from '@/components/common/LoadingScreen';
+import EmptyLayout from '@/components/layout/EmptyLayout';
 
 export default function App({ Component, pageProps }) {
     const [isLoading, setIsLoading] = useState(true);
-
+    const Layout = Component.Layout ?? EmptyLayout;
     useEffect(() => {
         // Simulate data loading
         setTimeout(() => {
             setIsLoading(false);
         }, 500);
     }, []);
-
+    const getLayout = Component.getLayout || ((page) => page);
     return (
         <>
             {isLoading ? (
                 <LoadingScreen />
             ) : (
-                <RootLayout>
+                <Layout>
                     <Component {...pageProps} />
-                </RootLayout>
+                </Layout>
             )}
         </>
     );
