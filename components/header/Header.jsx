@@ -240,7 +240,7 @@ export default function Header() {
                             </div>
                             <ul className="d-flex">
                                 <li>
-                                    <Link className="" href="/">
+                                    <Link className="" href="/blog">
                                         Blog
                                     </Link>
                                 </li>

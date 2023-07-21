@@ -15,6 +15,7 @@ import ImageHighlight from '@/components/common/ImageHighlight';
 import Product from '@/components/common/Product';
 import { useEffect, useState } from 'react';
 import Scroll from '@/components/common/Scroll';
+import RootLayout from '@/components/layout/RootLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -647,3 +648,5 @@ export async function getServerSideProps() {
         },
     };
 }
+
+Home.Layout = RootLayout;

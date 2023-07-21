@@ -1,4 +1,5 @@
 import Button from '@/components/common/Button';
+import RootLayout from '@/components/layout/RootLayout';
 import Link from 'next/link';
 import React from 'react';
 
@@ -21,3 +22,4 @@ export default function NotFoundPage() {
         </main>
     );
 }
+NotFoundPage.Layout = RootLayout;

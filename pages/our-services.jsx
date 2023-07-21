@@ -4,6 +4,7 @@ import Scroll from '@/components/common/Scroll';
 import SlideShow from '@/components/common/SlideShow';
 import { SwiperImage } from '@/components/common/SwiperImg';
 import HeaderBottom from '@/components/header/HeaderBottom';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -359,3 +360,4 @@ export default function OurServices() {
         </main>
     );
 }
+OurServices.Layout = RootLayout;

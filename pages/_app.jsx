@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@/styles/globals.scss';
 import 'animate.css';
 
-import RootLayout from '@/components/layout/layout';
+import RootLayout from '@/components/layout/RootLayout';
 import { LoadingScreen } from '@/components/common/LoadingScreen';
 import EmptyLayout from '@/components/layout/EmptyLayout';
 

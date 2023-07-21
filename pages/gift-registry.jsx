@@ -1,6 +1,7 @@
 import Heading from '@/components/common/Heading';
 import Scroll from '@/components/common/Scroll';
 import HeaderBottom from '@/components/header/HeaderBottom';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
 
 export default function GiftRegistry() {
@@ -237,3 +238,4 @@ export default function GiftRegistry() {
         </main>
     );
 }
+GiftRegistry.Layout = RootLayout;

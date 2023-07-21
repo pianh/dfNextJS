@@ -1,5 +1,5 @@
 import OtherLayout from '@/components/layout/OtherLayout';
-import RootLayout from '@/components/layout/layout';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
 import React from 'react';
 
@@ -113,4 +113,4 @@ export default function StandardList() {
     );
 }
 
-StandardList.Layout = OtherLayout;
+StandardList.Layout = RootLayout;

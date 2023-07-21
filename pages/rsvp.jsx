@@ -2,9 +2,10 @@ import Button from '@/components/common/Button';
 import Heading from '@/components/common/Heading';
 import { SwiperImage } from '@/components/common/SwiperImg';
 import HeaderBottom from '@/components/header/HeaderBottom';
+import RootLayout from '@/components/layout/RootLayout';
 import React from 'react';
 
-export default function rsvp() {
+export default function Rsvp() {
     return (
         <main>
             <div className="rsvp__wrapper">
@@ -82,3 +83,4 @@ export default function rsvp() {
         </main>
     );
 }
+Rsvp.Layout = RootLayout;

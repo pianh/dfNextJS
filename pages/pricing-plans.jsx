@@ -1,6 +1,7 @@
 import Heading from '@/components/common/Heading';
 import { SwiperImage } from '@/components/common/SwiperImg';
 import HeaderBottom from '@/components/header/HeaderBottom';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
 import React from 'react';
 
@@ -153,3 +154,4 @@ export default function PricingPlans() {
         </main>
     );
 }
+PricingPlans.Layout = RootLayout;

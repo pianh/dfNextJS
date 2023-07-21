@@ -1,6 +1,7 @@
 import Button from '@/components/common/Button';
 import Heading from '@/components/common/Heading';
 import ImageHighlight from '@/components/common/ImageHighlight';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
 import React from 'react';
 
@@ -150,3 +151,4 @@ export default function MakeAnAppointment() {
         </main>
     );
 }
+MakeAnAppointment.Layout = RootLayout;

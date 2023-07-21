@@ -2,14 +2,15 @@ import Button from '@/components/common/Button';
 import Heading from '@/components/common/Heading';
 import SocialIcon from '@/components/common/SocialIcon';
 import { SwiperImage } from '@/components/common/SwiperImg';
-import RootLayout from '@/components/layout/layout';
+import RootLayout from '@/components/layout/RootLayout';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-
-export default function blog() {
+import { RxMagnifyingGlass } from 'react-icons/rx';
+export default function Blog() {
     return (
         <div className="blog__wrapper">
-            <section className="container">
+            <section className="container-fluid">
                 <div className="blog__cate">
                     <span className="-level-1">Home</span>
                     <span className="-level-3">/ Blog right sidebar</span>
@@ -87,7 +88,7 @@ export default function blog() {
                         <div className="blog__right col-12 col-sm-12 col-lg-3 text-center">
                             <div className="blog__seach">
                                 <input placeholder="Search..." />
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <RxMagnifyingGlass />
                             </div>
                             <div className="blog__social">
                                 <div className="blog-user">
@@ -107,8 +108,9 @@ export default function blog() {
                                     <div className="-img">
                                         <Image
                                             src="/assets/images/blog/sidebar-blog-1.jpg"
-                                            width={200}
-                                            height={100}
+                                            width={250}
+                                            height={150}
+                                            objectFit="cover"
                                             alt="post image"
                                         />
                                     </div>
@@ -121,8 +123,9 @@ export default function blog() {
                                     <div className="-img">
                                         <Image
                                             src="/assets/images/blog/sidebar-blog-2.jpg"
-                                            width={200}
-                                            height={100}
+                                            width={250}
+                                            height={150}
+                                            objectFit="cover"
                                             alt="post image"
                                         />
                                     </div>
@@ -135,8 +138,9 @@ export default function blog() {
                                     <div className="-img">
                                         <Image
                                             src="/assets/images/blog/sidebar-blog-3.jpg"
-                                            width={200}
-                                            height={100}
+                                            width={250}
+                                            height={150}
+                                            objectFit="cover"
                                             alt="post image"
                                         />
                                     </div>
@@ -145,6 +149,133 @@ export default function blog() {
                                         <h4>December 29, 2022</h4>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="blog__category">
+                                <span className="blog__category-heading">CATEGORY</span>
+                                <div className="blog__category-list">
+                                    <ul>
+                                        <li>CEREMONY</li>
+                                        <li>DECORATION</li>
+                                        <li>DRESS</li>
+                                        <li>EVENTS</li>
+                                        <li>INVITATIONS</li>
+                                        <li>MUSIC</li>
+                                        <li>WEDDING</li>
+                                    </ul>
+                                </div>
+                                <div className="blog__category-img">
+                                    <Image
+                                        src="/assets/images/blog/sidebar-img.png"
+                                        alt="cate img"
+                                        width={250}
+                                        height={250}
+                                        objectFit="cover"
+                                    />
+                                </div>
+                            </div>
+                            <div className="blog__share">
+                                <span className="blog__share-heading">SOCIAL SHARE</span>
+                                <SocialIcon />
+                            </div>
+                            <div className="blog__tags">
+                                <span className="blog__tags-heading">TAGS:</span>
+                                <ul>
+                                    <li>
+                                        <Link href="#">Bride </Link>
+                                        <Link href="#">- Castle </Link>
+                                        <Link href="#">- Church </Link>
+                                        <Link href="#">- Decor </Link>
+                                        <Link href="#">- Floral </Link>
+                                        <Link href="#">- Groom </Link>
+                                        <Link href="#">- Hall </Link>
+                                        <Link href="#">- Lake </Link>
+                                        <Link href="#">- Hall </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="blog__instagram">
+                                <span className="blog__instagram-heading">INSTAGRAM:</span>
+                                <div className="blog__instagram-item">
+                                    <div className="row">
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-1.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-2.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-3.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-4.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-5.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-12 col-lg-4 col-sm-6">
+                                            <div className="-img">
+                                                <Image
+                                                    src="/assets/images/blog/ig-sidebar-blog-2.jpg"
+                                                    alt="instagram img"
+                                                    width={120}
+                                                    height={120}
+                                                    objectFit="cover"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="blog__archive">
+                                <span className="blog__archive-heading">ARCHIVE</span>
+                                <ul className="blog__archive-year">
+                                    <li>
+                                        <Link href="/">December 2022</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/">November 2022</Link>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -160,3 +291,4 @@ export default function blog() {
         </div>
     );
 }
+Blog.Layout = RootLayout;

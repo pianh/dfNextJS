@@ -2,6 +2,7 @@ import HeaderBottom from '@/components/header/HeaderBottom';
 import Image from 'next/image';
 import { useState } from 'react';
 import { SwiperImage } from '@/components/common/SwiperImg';
+import RootLayout from '@/components/layout/RootLayout';
 
 export default function Faq() {
     const [isDes1, setIsDes1] = useState(false);
@@ -154,3 +155,4 @@ export default function Faq() {
         </main>
     );
 }
+Faq.Layout = RootLayout;

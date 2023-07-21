@@ -5,6 +5,7 @@ import { SwiperImage } from '@/components/common/SwiperImg';
 import Map from '@/components/common/Map';
 import Heading from '@/components/common/Heading';
 import Button from '@/components/common/Button';
+import RootLayout from '@/components/layout/RootLayout';
 
 export default function Contact() {
     return (
@@ -138,3 +139,4 @@ export default function Contact() {
         </main>
     );
 }
+Contact.Layout = RootLayout;

@@ -73,7 +73,10 @@ function ControlledCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Button className="section__button slider__button" title="RSVP" />
+            <Button
+                className="section__button slider__button animate__animated animate__fadeInUp animate__delay-3s"
+                title="RSVP"
+            />
         </>
     );
 }

@@ -1,6 +1,7 @@
 .footer-top {
     padding-top: 100px;
     border-top: 1px solid var(--color-main-border);
+    padding: 100px 20px 0 20px;
 }
 
 .footer-top p {
@@ -41,8 +42,10 @@
 
 .footer-input {
     position: relative;
+    margin: 0 40px;
     input {
-        padding: 10px 40px;
+        width: 90%;
+        padding: 15px 10px;
         border-width: 1px;
         font-family: 'Arimo';
         font-size: 14px;
@@ -59,8 +62,11 @@
 
     i {
         position: absolute;
-        right: 120px;
-        top: 12px;
+        right: 40px;
+        top: 50%;
+        // left: 50%;
+        margin: auto 0;
+        transform: translate(-50%, -50%);
         color: #ed9f77;
     }
 }
@@ -86,15 +92,19 @@
 
     .footer-input {
         position: relative;
+        margin: 0;
         input {
-            padding: 10px 0px 10px 4px;
+            padding: 10px 0px 10px 14px;
             margin-right: 10px;
         }
 
         i {
             position: absolute;
-            right: 30px;
-            top: 12px;
+            right: 25px;
+            top: 50%;
+            // left: 50%;
+            margin: auto 0;
+            transform: translate(-50%, -50%);
             color: #ed9f77;
         }
     }
@@ -110,15 +120,6 @@
         margin-bottom: 10px;
     }
 
-    .footer-input {
-        i {
-            position: absolute;
-            right: 80px;
-            top: 12px;
-            color: #ed9f77;
-        }
-    }
-
     .footer-bottom {
         margin-top: 0;
         span {
@@ -129,10 +130,15 @@
 
 @media only screen and (min-width: 390px) and (max-width: 430px) {
     .footer-input {
+        position: relative;
+
         i {
             position: absolute;
-            right: 100px;
-            top: 12px;
+            right: 25px;
+            top: 50%;
+            // left: 50%;
+            margin: auto 0;
+            transform: translate(-50%, -50%);
             color: #ed9f77;
         }
     }

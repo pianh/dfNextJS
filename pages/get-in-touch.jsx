@@ -1,6 +1,6 @@
 import Heading from '@/components/common/Heading';
 import Map from '@/components/common/Map';
-import { AlternateLayout } from '@/components/layout/layout';
+import RootLayout, { AlternateLayout } from '@/components/layout/RootLayout';
 import Image from 'next/image';
 
 function GetInTouch() {
@@ -47,3 +47,4 @@ function GetInTouch() {
 }
 
 export default GetInTouch;
+GetInTouch.Layout = RootLayout;
