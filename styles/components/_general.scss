@@ -203,12 +203,12 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
-.section__image-button {
-    position: absolute;
-    top: 400px;
-    left: 45%;
-    margin: 0 auto;
-}
+// .section__image-button {
+//     position: absolute;
+//     top: 400px;
+//     left: 45%;
+//     margin: 0 auto;
+// }
 
 .logo__image {
     width: 200px;
@@ -254,10 +254,10 @@
         font-size: 18px;
         font-weight: 400;
     }
-    .section__image-button {
-        top: 60%;
-        left: 40%;
-    }
+    // .section__image-button {
+    //     top: 60%;
+    //     left: 40%;
+    // }
 }
 
 @media (max-width: 740px) {
@@ -317,9 +317,9 @@
         line-height: 28px;
         margin: 10px 0px;
     }
-    .section__image-button {
-        position: absolute;
-        top: 460px;
-        left: 130px;
-    }
+    // .section__image-button {
+    //     position: absolute;
+    //     top: 460px;
+    //     left: 130px;
+    // }
 }

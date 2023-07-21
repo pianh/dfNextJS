@@ -67,7 +67,7 @@ export default function Header() {
                                     <Link className="has-dropdown active" href="/">
                                         Home
                                     </Link>
-                                    <ul className="submenu">
+                                    {/* <ul className="submenu">
                                         <li>
                                             <Link className="" href="/">
                                                 Main Home
@@ -103,7 +103,7 @@ export default function Header() {
                                                 Wedding Cakes
                                             </Link>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className="has-dropdown">
                                     <Link className="" href="/">
@@ -176,13 +176,13 @@ export default function Header() {
                                             </div>
                                             <ul className="sub-detail">
                                                 <li>
-                                                    <Link href="/">Standard List</Link>
+                                                    <Link href="/standard-list">Standard List</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">Gallery List</Link>
+                                                    <Link href="/standard-list">Gallery List</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">Floating List</Link>
+                                                    <Link href="/standard-list">Floating List</Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -195,13 +195,13 @@ export default function Header() {
                                             </div>
                                             <ul className="sub-detail">
                                                 <li>
-                                                    <Link href="/">Three Column</Link>
+                                                    <Link href="/standard-list">Three Column</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">Three Column Grid</Link>
+                                                    <Link href="/standard-list">Three Column Grid</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">Four Column</Link>
+                                                    <Link href="/standard-list">Four Column</Link>
                                                 </li>
                                             </ul>
                                         </li>
