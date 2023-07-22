@@ -8,7 +8,6 @@ export default function OtherLayout({ children }) {
             <>
                 <HeaderOther />
                 {children}
-                <Footer />
             </>
         </div>
     );

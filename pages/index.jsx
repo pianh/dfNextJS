@@ -23,22 +23,22 @@ export default function Home({ resultsOne, resultsTwo }) {
     // console.log(resultsOne);
     // console.log(resultsTwo);
 
-    // function updateClock() {
-    //     const now = new Date();
-    //     const hours = now.getHours();
-    //     const minutes = now.getMinutes();
-    //     const seconds = now.getSeconds();
+    function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
 
-    //     const countdownHours = document.getElementById('hours');
-    //     const countdownMinutes = document.getElementById('minutes');
-    //     const countdownSeconds = document.getElementById('seconds');
+        const countdownHours = document.getElementById('hours');
+        const countdownMinutes = document.getElementById('minutes');
+        const countdownSeconds = document.getElementById('seconds');
 
-    //     countdownHours.textContent = hours.toString().padStart(2, '0');
-    //     countdownMinutes.textContent = minutes.toString().padStart(2, '0');
-    //     countdownSeconds.textContent = seconds.toString().padStart(2, '0');
-    // }
+        countdownHours.textContent = hours.toString().padStart(2, '0');
+        countdownMinutes.textContent = minutes.toString().padStart(2, '0');
+        countdownSeconds.textContent = seconds.toString().padStart(2, '0');
+    }
 
-    // setInterval(updateClock, 1000);
+    setInterval(updateClock, 1000);
 
     const [visibleSections, setVisibleSections] = useState([]);
 

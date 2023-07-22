@@ -250,7 +250,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="" href="/">
+                                    <Link className="" href="/landing">
                                         Landing
                                     </Link>
                                 </li>

@@ -181,6 +181,13 @@
     }
 }
 
+.section__image-button {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
 @media (min-width: 1024px) {
 }
 
@@ -305,5 +312,11 @@
     }
     .product__card {
         margin-bottom: 30px;
+    }
+    .section__image-button {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
     }
 }
