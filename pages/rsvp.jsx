@@ -40,7 +40,7 @@ export default function Rsvp() {
                                                 <span>Will you attend?</span>
                                                 <div className="d-flex align-items-center">
                                                     <input type="radio" />
-                                                    <span>Decline with regret</span>
+                                                    <span>Accept with pleasure</span>
                                                 </div>
                                             </div>
                                         </div>

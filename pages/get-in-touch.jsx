@@ -1,5 +1,6 @@
 import Heading from '@/components/common/Heading';
 import Map from '@/components/common/Map';
+import SocialIcon from '@/components/common/SocialIcon';
 import RootLayout, { AlternateLayout } from '@/components/layout/RootLayout';
 import Image from 'next/image';
 
@@ -22,7 +23,7 @@ function GetInTouch() {
                                 </div>
                                 <Heading title="GET IN TOUCH" subTitle="THEME HENDRERIT ID, LOREM" />
                                 <div className="get__contact animate__animated animate__backInDown animate__delay-0.5s">
-                                    <h1>CONTACT US</h1>
+                                    <h3>CONTACT US</h3>
                                     <div className="text-center d-flex flex-column">
                                         <p className="footer-address section__des-4">
                                             Via Carlo Montù 78 22021 Bellagio CO, Italy
@@ -31,6 +32,10 @@ function GetInTouch() {
                                         <p className="footer-phone section__des-4">+11 5488 3866</p>
                                         <p className="footer-mail section__des-4">castella@example.com</p>
                                     </div>
+                                </div>
+                                <div className="get__follow">
+                                    <h3>FOLLOW US</h3>
+                                    <SocialIcon />
                                 </div>
                             </div>
                         </div>

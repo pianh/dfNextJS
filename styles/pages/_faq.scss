@@ -10,9 +10,11 @@
 
 .faq__content {
     .-img {
-        width: 600px;
-        height: 600px;
+        width: 545px;
+        height: 545px;
         img {
+            width: 600px;
+            height: 600px;
             object-fit: cover;
         }
     }
@@ -62,6 +64,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
     .faq__box {
         margin-top: 40px;
