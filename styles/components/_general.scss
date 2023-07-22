@@ -55,6 +55,8 @@
 .section_logo-icon {
     width: 384px;
     height: 202px;
+    display: flex;
+    justify-content: center;
     img {
         object-fit: cover;
     }
@@ -132,7 +134,7 @@
     font-family: 'bona nova';
     top: 30%;
     left: 25%;
-    font-size: 105px;
+    font-size: 100px;
     letter-spacing: 3px;
     line-height: 65px;
     margin: 10px 0px;
@@ -145,6 +147,8 @@
     left: 0px;
     right: 0px;
     margin: 0px auto;
+    // font-style: italic;
+    font-family: 'Bona Nova';
 }
 
 .section__sub-title-3 {
@@ -153,7 +157,7 @@
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2px;
-    line-height: 28px;
+    line-height: 3px;
     margin: 10px 0px;
     text-align: center;
     text-transform: uppercase;
@@ -244,6 +248,7 @@
         left: 10%;
         font-size: 77px;
         line-height: 100px;
+        font-style: italic;
     }
 
     .section__sub-title-3 {

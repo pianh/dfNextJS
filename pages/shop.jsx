@@ -69,7 +69,7 @@ export default function Shop() {
                                                             objectFit="cover"
                                                         />
                                                     </Link>
-                                                    <div className="-effect"></div>
+                                                    <div className="shop__product-item-effect"></div>
                                                 </div>
                                                 <div className="shop__product__card mt-3 text-center">
                                                     <h3 className="section__title-4 m-0">INVITATIONS</h3>
@@ -92,7 +92,7 @@ export default function Shop() {
                                                             objectFit="cover"
                                                         />
                                                     </Link>
-                                                    <div className="-effect"></div>
+                                                    <div className="shop__product-item-effect"></div>
                                                 </div>
                                                 <div className="shop__product__card mt-3 text-center">
                                                     <h3 className="section__title-4 m-0">INVITATIONS</h3>
@@ -114,7 +114,7 @@ export default function Shop() {
                                         <RxMagnifyingGlass />
                                     </div>
                                     <div className="shop__category">
-                                        <span className="shop__category-heading">CATEGORY</span>
+                                        <span className="shop__category-heading">CATEGORIES</span>
                                         <div className="shop__category-list">
                                             <ul>
                                                 <li>CEREMONY</li>
@@ -125,6 +125,23 @@ export default function Shop() {
                                                 <li>MUSIC</li>
                                                 <li>WEDDING</li>
                                             </ul>
+                                        </div>
+                                    </div>
+                                    <div className="shop__filter">
+                                        <span className="shop__filter-heading">FILTER BY PRICE</span>
+
+                                        <div className="shop__filter-price">
+                                            <span className="shop__filter-price-start">$519.00</span>
+                                            <span> - </span>
+                                            <span className="shop__filter-price-end">$1,750.00</span>
+                                        </div>
+                                        <div className="shop__filter-button">
+                                            <button type="button" className="shop__filter-reset">
+                                                Reset
+                                            </button>
+                                            <button type="button" className="shop__filter-apply">
+                                                Apply
+                                            </button>
                                         </div>
                                     </div>
                                     <div className="shop__top-product">
@@ -140,14 +157,14 @@ export default function Shop() {
                                                 />
                                             </div>
                                             <div className="-heading">
-                                                <h3>Write your love story </h3>
-                                                <h4>December 29, 2022</h4>
+                                                <h3>GLITTER SLIPPER</h3>
+                                                <h4>$850.00</h4>
                                             </div>
                                         </div>
                                         <div className="shop__top-product-item">
                                             <div className="-img">
                                                 <Image
-                                                    src="/assets/images/blog/sidebar-blog-2.jpg"
+                                                    src="/assets/images/product/shop-24-img-02-600x860.jpg"
                                                     width={250}
                                                     height={150}
                                                     objectFit="cover"
@@ -155,32 +172,32 @@ export default function Shop() {
                                                 />
                                             </div>
                                             <div className="-heading">
-                                                <h3>Write your love story </h3>
-                                                <h4>December 29, 2022</h4>
+                                                <h3>GLITTER SLIPPER</h3>
+                                                <h4>$1,500.00</h4>
                                             </div>
                                         </div>
                                         <div className="shop__top-product-item">
                                             <div className="-img">
                                                 <Image
-                                                    src="/assets/images/blog/sidebar-blog-3.jpg"
-                                                    width={250}
-                                                    height={150}
+                                                    src="/assets/images/product/shop-24-img-01-600x860.jpg"
+                                                    width={150}
+                                                    height={250}
                                                     objectFit="cover"
                                                     alt="post image"
                                                 />
                                             </div>
                                             <div className="-heading">
-                                                <h3>Write your love story </h3>
-                                                <h4>December 29, 2022</h4>
+                                                <h3>BLACK FOREST CAKE</h3>
+                                                <h4>$1,500.00</h4>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="blog__share">
-                                        <span className="blog__share-heading">SOCIAL SHARE</span>
+                                    <div className="shop__share">
+                                        <span className="shop__share-heading">SOCIAL SHARE</span>
                                         <SocialIcon />
                                     </div>
-                                    <div className="blog__tags">
-                                        <span className="blog__tags-heading">TAGS:</span>
+                                    <div className="shop__tags">
+                                        <span className="shop__tags-heading">TAGS:</span>
                                         <ul>
                                             <li>
                                                 <Link href="#">Bride </Link>

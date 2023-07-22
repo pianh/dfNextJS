@@ -5,7 +5,7 @@ import ControlledCarousel from '@/components/slider/slider';
 import SocialIcon from '@/components/common/SocialIcon';
 import { Img } from '@/components/common/Img';
 import Button from '@/components/common/Button';
-
+import { BsDiamond } from 'react-icons/bs';
 import Link from 'next/link';
 import Map from '@/components/common/Map';
 import Heading from '@/components/common/Heading';
@@ -136,44 +136,40 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     <SocialIcon />
                                 </div>
                             </div>
-                            <div className="story__time-wrapper">
-                                <div className="row">
-                                    <div className="col-lg-1"></div>
-                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
-                                        <div className="box story-week box">
-                                            <h4>24</h4>
-                                            <span>Weeks</span>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div className="story__time-wrapper">
+                            <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
+                                <div className="box story-week box">
+                                    <h4>24</h4>
+                                    <span>Weeks</span>
+                                </div>
+                            </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
-                                        <div className="story-day box">
-                                            <h4>04</h4>
-                                            <span>Days</span>
-                                        </div>
-                                    </div>
+                            <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
+                                <div className="story-day box">
+                                    <h4>04</h4>
+                                    <span>Days</span>
+                                </div>
+                            </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
-                                        <div className="story-hour box">
-                                            <h4 id="hours">8</h4>
-                                            <span>Hours</span>
-                                        </div>
-                                    </div>
+                            <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
+                                <div className="story-hour box">
+                                    <h4 id="hours">8</h4>
+                                    <span>Hours</span>
+                                </div>
+                            </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
-                                        <div className="story-minute box">
-                                            <h4 id="minutes">20</h4>
-                                            <span>Minutes</span>
-                                        </div>
-                                    </div>
+                            <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
+                                <div className="story-minute box">
+                                    <h4 id="minutes">20</h4>
+                                    <span>Minutes</span>
+                                </div>
+                            </div>
 
-                                    <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
-                                        <div className="story-second box">
-                                            <h4 id="seconds">24</h4>
-                                            <span>Second</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-1"></div>
+                            <div className="col-12 col-sm-6 col-lg-2 d-sm-flex justify-content-center">
+                                <div className="story-second box">
+                                    <h4 id="seconds">24</h4>
+                                    <span>Second</span>
                                 </div>
                             </div>
                         </div>
@@ -273,83 +269,101 @@ export default function Home({ resultsOne, resultsTwo }) {
                             <div className="timeline__area__heading">
                                 <Heading title="LOVE STORY TIMELINE" subTitle="TAKE A LOOK AT OUR STORY" />
                             </div>
-                            <div className="timeline__process">
-                                <div className="row align-items-center">
-                                    <span className="timeline__process-wire"></span>
-                                    <div className="col-12 col-sm-6 col-lg-3">
-                                        <div className="timeline__image d-flex  justify-content-center">
-                                            <Image
-                                                src="/assets/images/h5-decor-01.png"
-                                                alt="timeline image"
-                                                width={200}
-                                                height={200}
-                                                objectFit="cover"
-                                            />
-                                        </div>
-                                        <div className="process-wrapper text-center ">
-                                            <h3 className="section__title-4">FIRST MEETING</h3>
-                                            <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
-                                            <p className="section__des-4 mt-3">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                            </p>
-                                        </div>
+                            <div className="timeline__process d-flex align-items-center">
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="timeline__image d-flex  justify-content-center">
+                                        <Image
+                                            src="/assets/images/h5-decor-01.png"
+                                            alt="timeline image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
                                     </div>
-                                    <div className="col-12 col-sm-6 col-lg-3">
-                                        <div className="timeline__image">
-                                            <Image
-                                                src="/assets/images/h5-decor-02.png"
-                                                alt="timeline image"
-                                                width={200}
-                                                height={200}
-                                                objectFit="cover"
-                                            />
-                                        </div>
-
-                                        <div className="process-wrapper">
-                                            <h3 className="section__title-4">FIRST MEETING</h3>
-                                            <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
-                                            <p className="section__des-4 mt-3">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                            </p>
-                                        </div>
+                                    <div className="process__line-wrapper">
+                                        <i>
+                                            <BsDiamond />
+                                        </i>
+                                        <span className="process__line"></span>
                                     </div>
-                                    <div className="col-12 col-sm-6 col-lg-3">
-                                        <div className="timeline__image">
-                                            <Image
-                                                src="/assets/images/h5-decor-03.png"
-                                                alt="timeline image"
-                                                width={200}
-                                                height={200}
-                                                objectFit="cover"
-                                            />
-                                        </div>
-
-                                        <div className="process-wrapper">
-                                            <h3 className="section__title-4">FIRST MEETING</h3>
-                                            <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
-                                            <p className="section__des-4 mt-3">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                            </p>
-                                        </div>
+                                    <div className="process-wrapper text-center ">
+                                        <h3 className="section__title-4">FIRST MEETING</h3>
+                                        <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
+                                        <p className="section__des-4 mt-3">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        </p>
                                     </div>
-                                    <div className="col-12 col-sm-6 col-lg-3">
-                                        <div className="timeline__image">
-                                            <Image
-                                                src="/assets/images/h5-decor-04.png"
-                                                alt="timeline image"
-                                                width={200}
-                                                height={200}
-                                                objectFit="cover"
-                                            />
-                                        </div>
-
-                                        <div className="process-wrapper">
-                                            <h3 className="section__title-4">FIRST MEETING</h3>
-                                            <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
-                                            <p className="section__des-4 mt-3">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                            </p>
-                                        </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="timeline__image">
+                                        <Image
+                                            src="/assets/images/h5-decor-02.png"
+                                            alt="timeline image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
+                                    <div className="process__line-wrapper">
+                                        <i>
+                                            <BsDiamond />
+                                        </i>
+                                        <span className="process__line"></span>
+                                    </div>
+                                    <div className="process-wrapper">
+                                        <h3 className="section__title-4">FIRST MEETING</h3>
+                                        <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
+                                        <p className="section__des-4 mt-3">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="timeline__image">
+                                        <Image
+                                            src="/assets/images/h5-decor-03.png"
+                                            alt="timeline image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
+                                    <div className="process__line-wrapper">
+                                        <i>
+                                            <BsDiamond />
+                                        </i>
+                                        <span className="process__line"></span>
+                                    </div>
+                                    <div className="process-wrapper">
+                                        <h3 className="section__title-4">FIRST MEETING</h3>
+                                        <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
+                                        <p className="section__des-4 mt-3">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-lg-3">
+                                    <div className="timeline__image">
+                                        <Image
+                                            src="/assets/images/h5-decor-04.png"
+                                            alt="timeline image"
+                                            width={200}
+                                            height={200}
+                                            objectFit="cover"
+                                        />
+                                    </div>
+                                    <div className="process__line-wrapper">
+                                        <i>
+                                            <BsDiamond />
+                                        </i>
+                                        <span className="process__line"></span>
+                                    </div>
+                                    <div className="process-wrapper">
+                                        <h3 className="section__title-4">FIRST MEETING</h3>
+                                        <h4 className="section__sub-title-4">A FRIEND&apos;S PARTY</h4>
+                                        <p className="section__des-4 mt-3">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -529,10 +543,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                 height="750"
                             />
                         </div>
-                        <div className="container pt-80">
-                            <div className="row">
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                        <div className="container pt-80 introduce-wrapper">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/hover-client-new.png"
                                             alt="introduce image"
@@ -542,8 +556,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                            </div>
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-2.png"
                                             alt="introduce image"
@@ -553,8 +569,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                            </div>
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-3.png"
                                             alt="introduce image"
@@ -564,8 +582,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                            </div>
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-04.png"
                                             alt="introduce image"
@@ -575,8 +595,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                            </div>
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-05.png"
                                             alt="introduce image"
@@ -586,8 +608,10 @@ export default function Home({ resultsOne, resultsTwo }) {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-3 col-lg-2">
-                                    <div className="box introduce-image">
+                            </div>
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
+                                <div className="introduce__item">
+                                    <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-6.png"
                                             alt="introduce image"
