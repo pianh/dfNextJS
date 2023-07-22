@@ -11,7 +11,7 @@ export default function Shop() {
     return (
         <main>
             <div className="shop__wrapper">
-                <div className="container-fluid">
+                <div className="">
                     <div className="shop__cate">
                         <span className="-level-1">Home</span>
                         <span className="-level-3">/ Shop</span>
@@ -34,142 +34,70 @@ export default function Shop() {
                                 </div>
                                 <div className="shop__product">
                                     <div className="row">
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
                                                     <Link href="">
                                                         <Image
                                                             src="/assets/images/partners/shop-15-img-1.jpg"
                                                             alt="product"
-                                                            width={310}
-                                                            height={430}
+                                                            width={410}
+                                                            height={530}
                                                             objectFit="cover"
                                                         />
                                                     </Link>
-                                                    <div className="product__img-effect"></div>
+                                                    <div className="shop__product-item-effect"></div>
                                                 </div>
-
-                                                <div className="product__card mt-3 text-center">
+                                                <div className="shop__product__card mt-3 text-center">
                                                     <h3 className="section__title-4 m-0">INVITATIONS</h3>
                                                     <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
+                                                    <span className="section__sub-title-4 shop__product__add">
                                                         ADD TO CART
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
                                                     <Link href="">
                                                         <Image
-                                                            src="/assets/images/partners/shop-18-img-1.jpg"
+                                                            src="/assets/images/partners/shop-15-img-1.jpg"
                                                             alt="product"
-                                                            width={310}
-                                                            height={430}
+                                                            width={410}
+                                                            height={530}
                                                             objectFit="cover"
                                                         />
                                                     </Link>
-                                                    <div className="product__img-effect"></div>
+                                                    <div className="-effect"></div>
                                                 </div>
-
-                                                <div className="product__card mt-3 text-center">
-                                                    <h3 className="section__title-4 m-0">CAKE ICING</h3>
+                                                <div className="shop__product__card mt-3 text-center">
+                                                    <h3 className="section__title-4 m-0">INVITATIONS</h3>
                                                     <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
+                                                    <span className="section__sub-title-4 shop__product__add">
                                                         ADD TO CART
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
                                                     <Link href="">
                                                         <Image
-                                                            src="/assets/images/partners/shop-24-img-01.jpg"
+                                                            src="/assets/images/partners/shop-15-img-1.jpg"
                                                             alt="product"
-                                                            width={310}
-                                                            height={430}
+                                                            width={410}
+                                                            height={530}
                                                             objectFit="cover"
                                                         />
                                                     </Link>
-                                                    <div className="product__img-effect"></div>
+                                                    <div className="-effect"></div>
                                                 </div>
-
-                                                <div className="product__card mt-3 text-center">
-                                                    <h3 className="section__title-4 m-0">LONG GOWN</h3>
+                                                <div className="shop__product__card mt-3 text-center">
+                                                    <h3 className="section__title-4 m-0">INVITATIONS</h3>
                                                     <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
-                                                        ADD TO CART
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
-                                                    <Link href="">
-                                                        <Image
-                                                            src="/assets/images/partners/shop-25-img-01.jpg"
-                                                            alt="product"
-                                                            width={310}
-                                                            height={430}
-                                                            objectFit="cover"
-                                                        />
-                                                    </Link>
-                                                    <div className="product__img-effect"></div>
-                                                </div>
-                                                <div className="product__card mt-3 text-center">
-                                                    <h3 className="section__title-4 m-0">CARAMEL CAKE</h3>
-                                                    <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
-                                                        ADD TO CART
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
-                                                    <Link href="">
-                                                        <Image
-                                                            src="/assets/images/partners/shop-25-img-01.jpg"
-                                                            alt="product"
-                                                            width={310}
-                                                            height={430}
-                                                            objectFit="cover"
-                                                        />
-                                                    </Link>
-                                                    <div className="product__img-effect"></div>
-                                                </div>
-                                                <div className="product__card mt-3 text-center">
-                                                    <h3 className="section__title-4 m-0">CARAMEL CAKE</h3>
-                                                    <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
-                                                        ADD TO CART
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-12 col-sm-6 col-lg-4">
-                                            <div className="product__wrapper">
-                                                <div className="product__img">
-                                                    <Link href="">
-                                                        <Image
-                                                            src="/assets/images/partners/shop-25-img-01.jpg"
-                                                            alt="product"
-                                                            width={310}
-                                                            height={430}
-                                                            objectFit="cover"
-                                                        />
-                                                    </Link>
-                                                    <div className="product__img-effect"></div>
-                                                </div>
-                                                <div className="product__card mt-3 text-center">
-                                                    <h3 className="section__title-4 m-0">CARAMEL CAKE</h3>
-                                                    <h4 className="section__des-4">$420.00</h4>
-                                                    <span className="section__sub-title-4 product__add">
+                                                    <span className="section__sub-title-4 shop__product__add">
                                                         ADD TO CART
                                                     </span>
                                                 </div>
