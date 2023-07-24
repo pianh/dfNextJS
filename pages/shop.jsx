@@ -129,7 +129,7 @@ export default function Shop() {
                                     </div>
                                     <div className="shop__filter">
                                         <span className="shop__filter-heading">FILTER BY PRICE</span>
-
+                                        <input type="range" min="100" max="500" className="shop__input" />
                                         <div className="shop__filter-price">
                                             <span className="shop__filter-price-start">$519.00</span>
                                             <span> - </span>
