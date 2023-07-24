@@ -145,10 +145,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section className="faq__slider">
-                    <div className="container">
-                        <div className="faq__img-wrapper d-flex">
-                            <SwiperImage />
-                        </div>
+                    <div className="faq__img-wrapper d-flex">
+                        <SwiperImage />
                     </div>
                 </section>
             </div>

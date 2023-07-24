@@ -22,7 +22,7 @@ export default function GiftRegistry() {
                     <div className="gift__item-wrapper">
                         <div className="container">
                             <div className="row">
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new.png"
@@ -33,7 +33,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new2.png"
@@ -44,7 +44,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new3.png"
@@ -55,7 +55,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new4.png"
@@ -66,7 +66,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new5.png"
@@ -77,7 +77,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new6.png"
@@ -88,7 +88,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new7.png"
@@ -99,7 +99,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new8.png"
@@ -110,7 +110,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new9.png"
@@ -121,7 +121,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new10.png"
@@ -132,7 +132,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new11.png"
@@ -143,7 +143,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new12.png"
@@ -154,7 +154,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new13.png"
@@ -165,7 +165,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new14.png"
@@ -176,7 +176,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new15.png"
@@ -187,7 +187,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new16.png"
@@ -198,7 +198,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new17.png"
@@ -209,7 +209,7 @@ export default function GiftRegistry() {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2">
+                                <div className="col-12 col-sm-4 col-lg-2 col-xl-2 gift__item">
                                     <div className="gift__item-img">
                                         <Image
                                             src="/assets/images/gifts/hover-client-new.png"

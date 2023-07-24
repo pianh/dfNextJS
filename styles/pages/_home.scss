@@ -169,7 +169,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 70px;
     position: relative;
     // overflow: hidden;
     img {
@@ -217,6 +217,11 @@
     margin-top: 15px;
 }
 
+/* Add this to fix the thicker right border */
+.introduce__item:not(:last-child) {
+    margin-right: -1px;
+}
+
 .introduce-image {
     max-width: 400px;
     max-height: 400px;
@@ -258,16 +263,6 @@
     .introduce-wrapper {
         display: flex;
         flex-wrap: wrap;
-
-        .introduce__item {
-            border: 1px solid var(--color-main-border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 232px;
-            height: 232px;
-            margin-top: 0px;
-        }
     }
     .story-week,
     .story-day,
@@ -350,6 +345,21 @@
     .timeline__process {
         flex-wrap: wrap;
     }
+    .introduce__item {
+        border: 1px solid var(--color-main-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 218px;
+        height: 218px;
+        margin-top: -1px;
+    }
+
+    /* Add this to fix the thicker right border */
+    .introduce__item:not(:last-child) {
+        margin-right: -1px;
+        margin-top: -1px;
+    }
 }
 
 @media (max-width: 740px) {
@@ -379,6 +389,19 @@
         width: 350px;
         height: 350px;
         margin: 10px 10px;
+    }
+    .story-week::after,
+    .story-day::after,
+    .story-hour::after,
+    .story-minute::after,
+    .story-second::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 59px;
+        background-color: var(--color-main-border);
+        margin-bottom: -139px;
+        margin-top: 38px;
     }
     .timeline__process-wire {
         display: none;
@@ -430,5 +453,10 @@
             height: 300px;
             margin-top: 0px;
         }
+    }
+    .introduce-wrapper .introduce__item {
+        border: 1px solid var(--color-main-border);
+
+        margin-top: -1px;
     }
 }

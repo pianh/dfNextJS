@@ -37,20 +37,33 @@
     .-item {
         margin-top: 20px;
     }
-    .-img {
+    .-img-wrap {
         width: 100%;
-        &:hover {
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(5px);
-        }
+    }
+    .-img {
+        width: 400px;
+        height: 330px;
+        margin-top: 20px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         img {
-            width: 100%;
+            max-width: 130%;
+            width: 130%;
             height: auto;
             object-fit: cover;
+            transform: scale(1.1);
+            &:hover {
+                transition: transform 0.5s ease-in-out;
+                transform: scale(1.1) translateX(5px);
+            }
         }
     }
     .-heading {
-        margin-top: 22px;
+        margin-top: 10px;
         .-title {
             color: #0d0d0d;
             display: block;
@@ -70,5 +83,58 @@
             line-height: 12px;
             text-transform: uppercase;
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .standard__gallery {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .-item {
+            margin-top: 20px;
+        }
+        .-img {
+            width: 330px;
+            height: 280px;
+
+            img {
+                width: 330px;
+                height: 280px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .standard__gallery {
+        padding: 0 30px;
+        .-item {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .-img {
+            width: 330px;
+            height: 260px;
+
+            img {
+                width: 330px;
+                height: 260px;
+                object-fit: cover;
+            }
+        }
+    }
+    .standard__gallery .-heading {
+        width: 100%;
+    }
+    .standard__gallery .-heading .-title {
+        text-align: left;
     }
 }

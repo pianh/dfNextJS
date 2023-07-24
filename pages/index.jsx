@@ -394,7 +394,7 @@ export default function Home({ resultsOne, resultsTwo }) {
                 corrupti. Tenetur commodi facilis, expedita magnam officiis asperiores unde recusandae accusamus enim
                 modi, adipisci ea."
                             />
-                            <div className="pt-60 brides__grooms-wrapper">
+                            <div className="brides__grooms-wrapper">
                                 <div className="row ">
                                     <div className="col-12 col-sm-4 col-lg-4">
                                         <div className="brides__grooms-image">
@@ -544,8 +544,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                             />
                         </div>
                         <div className="container pt-80 introduce-wrapper">
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/hover-client-new.png"
@@ -557,8 +557,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-2.png"
@@ -570,8 +570,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-3.png"
@@ -583,8 +583,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-04.png"
@@ -596,8 +596,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-05.png"
@@ -609,8 +609,8 @@ export default function Home({ resultsOne, resultsTwo }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-2 align-items-center">
-                                <div className="introduce__item">
+                            <div className="col-12 col-sm-4 col-lg-2 align-items-center introduce__item">
+                                <div>
                                     <div className="introduce-image">
                                         <Image
                                             src="/assets/images/h3-client-hover-6.png"

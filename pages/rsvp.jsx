@@ -73,10 +73,8 @@ export default function Rsvp() {
                     </div>
                 </section>
                 <section className="rsvp__slider">
-                    <div className="container">
-                        <div className="rsvp__img-wrapper d-flex">
-                            <SwiperImage />
-                        </div>
+                    <div className="rsvp__img-wrapper d-flex">
+                        <SwiperImage />
                     </div>
                 </section>
             </div>

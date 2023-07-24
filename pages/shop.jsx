@@ -103,6 +103,75 @@ export default function Shop() {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
+                                                    <Link href="">
+                                                        <Image
+                                                            src="/assets/images/partners/shop-15-img-1.jpg"
+                                                            alt="product"
+                                                            width={410}
+                                                            height={530}
+                                                            objectFit="cover"
+                                                        />
+                                                    </Link>
+                                                    <div className="shop__product-item-effect"></div>
+                                                </div>
+                                                <div className="shop__product__card mt-3 text-center">
+                                                    <h3 className="section__title-4 m-0">INVITATIONS</h3>
+                                                    <h4 className="section__des-4">$420.00</h4>
+                                                    <span className="section__sub-title-4 shop__product__add">
+                                                        ADD TO CART
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
+                                                    <Link href="">
+                                                        <Image
+                                                            src="/assets/images/partners/shop-15-img-1.jpg"
+                                                            alt="product"
+                                                            width={410}
+                                                            height={530}
+                                                            objectFit="cover"
+                                                        />
+                                                    </Link>
+                                                    <div className="shop__product-item-effect"></div>
+                                                </div>
+                                                <div className="shop__product__card mt-3 text-center">
+                                                    <h3 className="section__title-4 m-0">INVITATIONS</h3>
+                                                    <h4 className="section__des-4">$420.00</h4>
+                                                    <span className="section__sub-title-4 shop__product__add">
+                                                        ADD TO CART
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-sm-4 col-12 shop__product-item-wrapper">
+                                            <div className="shop__product-item">
+                                                <div className="-img">
+                                                    <Link href="">
+                                                        <Image
+                                                            src="/assets/images/partners/shop-15-img-1.jpg"
+                                                            alt="product"
+                                                            width={410}
+                                                            height={530}
+                                                            objectFit="cover"
+                                                        />
+                                                    </Link>
+                                                    <div className="shop__product-item-effect"></div>
+                                                </div>
+                                                <div className="shop__product__card mt-3 text-center">
+                                                    <h3 className="section__title-4 m-0">INVITATIONS</h3>
+                                                    <h4 className="section__des-4">$420.00</h4>
+                                                    <span className="section__sub-title-4 shop__product__add">
+                                                        ADD TO CART
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -216,15 +285,13 @@ export default function Shop() {
                             </div>
                         </div>
                     </div>
-                    <section className="shop__slider">
-                        <div className="container-fluid">
-                            <div className="shop__img-wrapper d-flex">
-                                <SwiperImage />
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
+            <section className="shop__slider">
+                <div className="shop__img-wrapper d-flex">
+                    <SwiperImage />
+                </div>
+            </section>
         </main>
     );
 }

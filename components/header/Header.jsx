@@ -6,6 +6,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import SocialIcon from '../common/SocialIcon';
 import { GrClose } from 'react-icons/gr';
+import { useRouter } from 'next/router';
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(true);
     const [isSticky, setIsSticky] = useState(false);
@@ -18,17 +19,30 @@ export default function Header() {
         setShowMobile((p) => !p);
     };
 
+    const router = useRouter();
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             setIsSticky(scrollTop > 0);
         };
 
+        // Add event listeners for scroll and route change
         window.addEventListener('scroll', handleScroll);
+        router.events.on('routeChangeStart', closeHeaderOnRouteChange);
+
         return () => {
+            // Clean up event listeners on component unmount
             window.removeEventListener('scroll', handleScroll);
+            router.events.off('routeChangeStart', closeHeaderOnRouteChange);
         };
     }, []);
+
+    // Function to close the header on route change
+    const closeHeaderOnRouteChange = () => {
+        setMenuOpen(true);
+        setShowMobile(false);
+    };
 
     return (
         <div>

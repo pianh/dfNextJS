@@ -70,11 +70,13 @@
 
 .service__introduce {
     margin-top: 20px;
+
     .service-gift {
         border: 1px solid var(--color-header-border);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: -1px;
     }
 }
 
@@ -135,7 +137,16 @@
     .service__married-img {
         width: 435;
         height: 450;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+}
+.service__married-img-wrapper:nth-child(1),
+.service__married-img-wrapper:nth-child(2) {
+    margin-right: 20px;
 }
 
 .service__married-img {
@@ -198,7 +209,7 @@
             display: inline-flex;
             flex-wrap: nowrap;
             font-family: 'Montserrat';
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
             letter-spacing: 2.1px;
             line-height: 15px;
@@ -247,7 +258,7 @@
 
 .service__slider {
     margin-top: 150px;
-    padding: 80px 0;
+    padding: 80px 20px 80px 20px;
     border-top: 1px solid var(--color-header-border);
 }
 
@@ -297,6 +308,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+
         .service__married-img {
             margin-top: 30px;
         }
@@ -304,6 +316,13 @@
     .service__introduce {
         display: flex;
         // flex-direction: column;
+    }
+    .service-gift {
+        margin-top: -1px;
+    }
+    .service__married-img-wrapper:nth-child(1),
+    .service__married-img-wrapper:nth-child(2) {
+        margin-right: 0px;
     }
 }
 
@@ -343,6 +362,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 60px;
+            margin-right: 0;
         }
         .service__married-img {
             width: 355px;
@@ -361,5 +381,8 @@
     }
     .service__introduce {
         padding: 50px 10px;
+    }
+    .service-gift {
+        margin-top: -1px;
     }
 }

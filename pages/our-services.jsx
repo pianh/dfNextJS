@@ -280,7 +280,7 @@ export default function OurServices() {
                     </div>
                     <div className="service__introduce pt-120">
                         <div className="row">
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/hover-client-new.png"
@@ -291,7 +291,7 @@ export default function OurServices() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/h3-client-2.png"
@@ -302,7 +302,7 @@ export default function OurServices() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/h3-client-hover-3.png"
@@ -313,7 +313,7 @@ export default function OurServices() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/h3-client-hover-04.png"
@@ -324,7 +324,7 @@ export default function OurServices() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/h3-client-hover-05.png"
@@ -335,7 +335,7 @@ export default function OurServices() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6 col-lg-2">
+                            <div className="col-12 col-sm-6 col-lg-2 service-item">
                                 <div className="service-gift">
                                     <Image
                                         src="/assets/images/h3-client-hover-6.png"
@@ -350,10 +350,8 @@ export default function OurServices() {
                     </div>
                 </section>
                 <section className="service__slider">
-                    <div className="container">
-                        <div className="faq__img-wrapper d-flex">
-                            <SwiperImage />
-                        </div>
+                    <div className="faq__img-wrapper d-flex">
+                        <SwiperImage />
                     </div>
                 </section>
             </div>

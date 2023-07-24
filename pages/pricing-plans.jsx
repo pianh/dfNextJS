@@ -144,10 +144,8 @@ export default function PricingPlans() {
                     </div>
                 </section>
                 <section className="pricing__slider">
-                    <div className="container">
-                        <div className="pricing__img-wrapper d-flex">
-                            <SwiperImage />
-                        </div>
+                    <div className="pricing__img-wrapper d-flex">
+                        <SwiperImage />
                     </div>
                 </section>
             </div>

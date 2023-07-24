@@ -1,15 +1,18 @@
 .swiper__img {
-    width: 270px;
-    height: 260px;
+    width: 240px;
+    height: 237px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Added to center the whole slide content */
+
     img {
-        width: 200px;
-        height: 210px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         transition: filter 0.5s ease;
     }
+
     &:hover img {
         filter: brightness(80%);
     }
@@ -21,16 +24,15 @@
         height: auto;
         justify-content: center;
     }
+    .swiper__img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media (max-width: 740px) {
     .swiper__img {
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        img {
-            width: 280px;
-            height: 280px;
-        }
+        width: 300px;
+        height: 300px;
     }
 }

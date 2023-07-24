@@ -15,22 +15,24 @@ export default function StandardList() {
                     </div>
                     <div className="standard__gallery">
                         <div className="row">
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
-                                <div className="-img">
-                                    <Image
-                                        src="/assets/images/maa/ig-sidebar-blog-1.jpg"
-                                        width={315}
-                                        height={300}
-                                        objectFit="cover"
-                                        alt="galley image"
-                                    />
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
+                                <div className="-img-wrap">
+                                    <div className="-img">
+                                        <Image
+                                            src="/assets/images/maa/ig-sidebar-blog-1.jpg"
+                                            width={355}
+                                            height={350}
+                                            objectFit="cover"
+                                            alt="galley image"
+                                        />
+                                    </div>
                                 </div>
                                 <div className="-heading">
                                     <h3 className="-title">ETERNITY</h3>
                                     <h4 className="-sub-title">CEREMONYWHITE</h4>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/maa/ig-sidebar-blog-2.jpg"
@@ -45,7 +47,7 @@ export default function StandardList() {
                                     <h4 className="-sub-title">CEREMONYWHITE</h4>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/maa/ig-sidebar-blog-3.jpg"
@@ -60,7 +62,7 @@ export default function StandardList() {
                                     <h4 className="-sub-title">CEREMONYWHITE</h4>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/maa/ig-sidebar-blog-4.jpg"
@@ -75,7 +77,7 @@ export default function StandardList() {
                                     <h4 className="-sub-title">CEREMONYWHITE</h4>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/maa/ig-sidebar-blog-5.jpg"
@@ -90,7 +92,7 @@ export default function StandardList() {
                                     <h4 className="-sub-title">CEREMONYWHITE</h4>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-4 col-lg-4 col-xl-4 -item">
+                            <div className="col-12 col-sm-6 col-lg-4 col-xl-4 -item">
                                 <div className="-img">
                                     <Image
                                         src="/assets/images/maa/ig-sidebar-blog-6.jpg"
