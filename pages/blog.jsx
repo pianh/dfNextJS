@@ -187,9 +187,13 @@ export default function Blog() {
                                             <Link href="#">- Church </Link>
                                             <Link href="#">- Decor </Link>
                                             <Link href="#">- Floral </Link>
-                                            <Link href="#">- Groom </Link>
+                                            <Link href="#"> Groom </Link>
                                             <Link href="#">- Hall </Link>
                                             <Link href="#">- Lake </Link>
+                                            <Link href="#">- Lake </Link>
+                                            <Link href="#">- Lake </Link>
+                                            <Link href="#"> Hall </Link>
+                                            <Link href="#">- Hall </Link>
                                             <Link href="#">- Hall </Link>
                                         </li>
                                     </ul>

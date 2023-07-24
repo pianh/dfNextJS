@@ -36,6 +36,7 @@
     .shop__nav {
         display: flex;
         justify-content: space-between;
+        padding: 0 6px;
         span {
             color: #262626;
             font-size: 15px;
@@ -70,12 +71,13 @@
     animation: fadeIn 0.5s ease-in-out;
 }
 .shop__product-item-wrapper {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .shop__product-item {
-    padding: 0 20px;
+    padding: 0 6px;
     .-img {
         position: relative;
         max-width: 100%;

@@ -6,29 +6,23 @@ import RootLayout from '@/components/layout/RootLayout';
 
 export default function Faq() {
     const [isDes1, setIsDes1] = useState(false);
-    const [isDes2, setIsDes2] = useState(true);
-    const [isDes3, setIsDes3] = useState(true);
-    const [isDes4, setIsDes4] = useState(true);
-    const [isDes5, setIsDes5] = useState(true);
-    const [isDes6, setIsDes6] = useState(true);
 
-    const toggleDes1 = () => {
+    const toggleDes = (e) => {
+        const target = e.currentTarget;
         setIsDes1(!isDes1);
-    };
-    const toggleDes2 = () => {
-        setIsDes2(!isDes2);
-    };
-    const toggleDes3 = () => {
-        setIsDes3(!isDes3);
-    };
-    const toggleDes4 = () => {
-        setIsDes4(!isDes4);
-    };
-    const toggleDes5 = () => {
-        setIsDes5(!isDes5);
-    };
-    const toggleDes6 = () => {
-        setIsDes6(!isDes6);
+
+        const nextSibling = target.nextElementSibling;
+        if (nextSibling) {
+            nextSibling.classList.toggle('active__toggle');
+        }
+
+        // Remove "active__toggle" class from other "-des" elements
+        const allDesElements = document.querySelectorAll('.-des');
+        allDesElements.forEach((desElement) => {
+            if (desElement !== nextSibling) {
+                desElement.classList.remove('active__toggle');
+            }
+        });
     };
 
     return (
@@ -56,88 +50,68 @@ export default function Faq() {
                             <div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
                                 <div>
                                     <div className="faq__box animate__animated animate__backInDown animate__delay-0.5s">
-                                        <div className="-title" onClick={toggleDes1}>
+                                        <div className="-title" onClick={toggleDes}>
                                             <span>HOW TO GET THERE</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </div>
-                                        {!isDes1 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
+
+                                        <div className="-des active__toggle">
+                                            1 Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut minus
+                                            id quod maxime ut semper libero, sit amet adipiscing blandit vel, rhoncus
+                                            venenatis sodales cumque nihil impedit quo placeat omnis voluptas luctus
+                                            pulvinar, hendrerit id, lorem.
+                                        </div>
                                     </div>
                                     <div className="faq__box">
-                                        <div className="-title" onClick={toggleDes2}>
+                                        <div className="-title" onClick={toggleDes}>
                                             <span>WHEN YOU NEED TO BOOK</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </div>
-                                        {!isDes2 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
+
+                                        <div className="-des">
+                                            2 Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut minus
+                                            id quod maxime ut semper libero, sit amet adipiscing blandit vel, rhoncus
+                                            venenatis sodales cumque nihil impedit quo placeat omnis voluptas luctus
+                                            pulvinar, hendrerit id, lorem.
+                                        </div>
                                     </div>
                                     <div className="faq__box">
-                                        <div className="-title" onClick={toggleDes3}>
+                                        <div className="-title" onClick={toggleDes}>
                                             <span>DECORATION AND STUFF</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </div>
-                                        {!isDes3 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
+
+                                        <div className="-des">
+                                            3 Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut minus
+                                            id quod maxime ut semper libero, sit amet adipiscing blandit vel, rhoncus
+                                            venenatis sodales cumque nihil impedit quo placeat omnis voluptas luctus
+                                            pulvinar, hendrerit id, lorem.
+                                        </div>
                                     </div>
                                     <div className="faq__box">
-                                        <div className="-title" onClick={toggleDes4}>
+                                        <div className="-title" onClick={toggleDes}>
                                             <span>HOW TO GET THERE</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </div>
-                                        {!isDes4 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
+
+                                        <div className="-des">
+                                            4 Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut minus
+                                            id quod maxime ut semper libero, sit amet adipiscing blandit vel, rhoncus
+                                            venenatis sodales cumque nihil impedit quo placeat omnis voluptas luctus
+                                            pulvinar, hendrerit id, lorem.
+                                        </div>
                                     </div>
                                     <div className="faq__box">
-                                        <div className="-title" onClick={toggleDes5}>
+                                        <div className="-title" onClick={toggleDes}>
                                             <span>PREPARE FOR BIG DAY</span>
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </div>
-                                        {!isDes5 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className="faq__box">
-                                        <div className="-title" onClick={toggleDes6}>
-                                            <span>PHOTOGRAPHY DESTINATIONS</span>
-                                            <i className="fa-solid fa-arrow-right-long"></i>
+                                        <div className="-des">
+                                            5 Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut minus
+                                            id quod maxime ut semper libero, sit amet adipiscing blandit vel, rhoncus
+                                            venenatis sodales cumque nihil impedit quo placeat omnis voluptas luctus
+                                            pulvinar, hendrerit id, lorem.
                                         </div>
-                                        {!isDes6 && (
-                                            <div className="-des">
-                                                Tellus eget condimentum rhoncus, sem quam nec vitae sapien velit ut
-                                                minus id quod maxime ut semper libero, sit amet adipiscing blandit vel,
-                                                rhoncus venenatis sodales cumque nihil impedit quo placeat omnis
-                                                voluptas luctus pulvinar, hendrerit id, lorem.
-                                            </div>
-                                        )}
                                     </div>
                                 </div>
                             </div>

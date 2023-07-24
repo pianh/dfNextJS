@@ -81,7 +81,7 @@ export const SwiperImage = () => {
             autoplay={{
                 delay: 3000,
             }}
-            onSlideChange={() => console.log('slide change')}
+            // onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
             {slides.map((slide, index) => (
