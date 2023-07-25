@@ -78,114 +78,66 @@ export default function Header() {
                         >
                             <ul className="d-flex">
                                 <li>
-                                    <Link className="has-dropdown active" href="/">
+                                    <Link className="active" href="/">
                                         Home
                                     </Link>
-                                    {/* <ul className="submenu">
-                                        <li>
-                                            <Link className="" href="/">
-                                                Main Home
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Announcement Home
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Bridal Shop
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Bridal Shop
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Parallax Gallery
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Florist Home
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link className="" href="/">
-                                                Wedding Cakes
-                                            </Link>
-                                        </li>
-                                    </ul> */}
                                 </li>
                                 <li className="has-dropdown">
                                     <Link className="" href="/">
                                         Pages
                                     </Link>
                                     <ul className="submenu">
-                                        {/* <li>
-                                            <Link className="has-dropdown" href="/about">
-                                                About US
-                                            </Link>
-                                        </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/">
-                                                Our Story
-                                            </Link>
-                                        </li> */}
-                                        <li>
-                                            <Link className="has-dropdown" href="/gift-registry">
+                                            <Link className="" href="/gift-registry">
                                                 Gift registry
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/our-services">
+                                            <Link className="" href="/our-services">
                                                 Our Service
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/pricing-plans">
+                                            <Link className="" href="/pricing-plans">
                                                 Pricing Plans
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/make-an-appointment">
+                                            <Link className="" href="/make-an-appointment">
                                                 Make an Appointment
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/rsvp">
+                                            <Link className="" href="/rsvp">
                                                 RSVP Page
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/contact-us">
+                                            <Link className="" href="/contact-us">
                                                 Contact US
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/get-in-touch">
+                                            <Link className="" href="/get-in-touch">
                                                 Get In Touch
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="has-dropdown" href="/faq">
+                                            <Link className="" href="/faq">
                                                 FAQ Page
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li className="has-dropdown">
                                     <Link className="" href="/">
                                         Portfolio
                                     </Link>
+
                                     <ul className="submenu">
-                                        <li className="has-dropdown">
+                                        <li className="has-sub-dropdown">
                                             <div className="d-flex justify-content-between">
-                                                <Link className="has-dropdown" href="/">
-                                                    List Types
-                                                </Link>
+                                                <Link href="/">List Types</Link>
                                                 <i className="fa-solid fa-angle-right"></i>
                                             </div>
                                             <ul className="sub-detail">
