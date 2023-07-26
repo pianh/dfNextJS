@@ -20,6 +20,9 @@ export default function App({ Component, pageProps }) {
             setIsLoading(false);
         }, 500);
     }, []);
+    useEffect(() => {
+        require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }, []);
     const getLayout = Component.getLayout || ((page) => page);
     return (
         <>
